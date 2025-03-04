@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+design:
+https://www.figma.com/design/0Oy74O0Q6tDliEorjo7RT9/FREEBIES-Landingpage-LaslesVPN-(Community)?node-id=1-2&t=4w3yLt1AdNmcWNcm-0
+
 First, run the development server:
 
 ```bash
