@@ -17,22 +17,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Custom Software
+                  Wordpress Development
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Cloud Solutions
+                  Web Development
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  AI Integration
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Digital Transformation
+                  Mobile Development
                 </Link>
               </li>
             </ul>
