@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-blue-50 to-white">
+    <section id="home" className="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-12 md:mb-0">
@@ -13,12 +14,12 @@ export default function Hero() {
             Chúng tôi giúp doanh nghiệp phát triển và đổi mới với các giải pháp phần mềm tiên tiến được tùy chỉnh theo nhu cầu của bạn.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-red-500 text-white px-8 py-3 rounded-full hover:bg-red-600 transition-colors cursor-pointer">
+              <Link href="#about" className="bg-red-500 text-white px-8 py-3 rounded-full hover:bg-red-600 transition-colors cursor-pointer">
                 Bắt Đầu
-              </button>
-              <button className="border-2 border-red-500 text-red-500 px-8 py-3 rounded-full hover:bg-red-50 transition-colors cursor-pointer">
+              </Link>
+              {/* <button className="border-2 border-red-500 text-red-500 px-8 py-3 rounded-full hover:bg-red-50 transition-colors cursor-pointer">
                 Tìm Hiểu Thêm
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="w-full md:w-1/2">
