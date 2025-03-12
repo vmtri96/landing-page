@@ -22,17 +22,32 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-gray-600 hover:text-red-500 transition-colors">
-              Features
+            <Link href="#home" className="text-gray-600 hover:text-red-500 transition-colors">
+              Trang chủ
+            </Link>
+            <Link href="#about" className="text-gray-600 hover:text-red-500 transition-colors">
+              Giới thiệu
             </Link>
             <Link href="#services" className="text-gray-600 hover:text-red-500 transition-colors">
-              Services
+              Dịch vụ
             </Link>
-            <Link href="#testimonials" className="text-gray-600 hover:text-red-500 transition-colors">
-              Testimonials
+            <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
+              Sản phẩm
+            </Link>
+            <Link href="#projects" className="text-gray-600 hover:text-red-500 transition-colors">
+              Dự án
+            </Link>
+            <Link href="#clients" className="text-gray-600 hover:text-red-500 transition-colors">
+              Khách hàng
+            </Link>
+            <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
+              Blog/Tin tức
+            </Link>
+            <Link href="#faqs" className="text-gray-600 hover:text-red-500 transition-colors">
+              FAQs
             </Link>
             <Link href="#contact" className="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition-colors">
-              Contact Us
+              Liên hệ
             </Link>
           </div>
 
@@ -55,17 +70,32 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
-              <Link href="#features" className="text-gray-600 hover:text-red-500 transition-colors">
-                Features
+              <Link href="#home" className="text-gray-600 hover:text-red-500 transition-colors">
+                Trang chủ
+              </Link>
+              <Link href="#about" className="text-gray-600 hover:text-red-500 transition-colors">
+                Giới thiệu
               </Link>
               <Link href="#services" className="text-gray-600 hover:text-red-500 transition-colors">
-                Services
+                Dịch vụ
               </Link>
-              <Link href="#testimonials" className="text-gray-600 hover:text-red-500 transition-colors">
-                Testimonials
+              <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
+                Sản phẩm
+              </Link>
+              <Link href="#projects" className="text-gray-600 hover:text-red-500 transition-colors">
+                Dự án
+              </Link>
+              <Link href="#clients" className="text-gray-600 hover:text-red-500 transition-colors">
+                Khách hàng
+              </Link>
+              <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
+                Blog/Tin tức
+              </Link>
+              <Link href="#faqs" className="text-gray-600 hover:text-red-500 transition-colors">
+                FAQs
               </Link>
               <Link href="#contact" className="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors text-center">
-                Contact Us
+                Liên hệ
               </Link>
             </div>
           </div>
