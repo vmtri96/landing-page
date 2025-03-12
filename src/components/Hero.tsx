@@ -7,17 +7,17 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Transform Your Business with Modern Solutions
+              Nâng Tầm Doanh Nghiệp Với Giải Pháp Hiện Đại
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              We help businesses scale and innovate with cutting-edge software solutions tailored to their needs.
+            Chúng tôi giúp doanh nghiệp phát triển và đổi mới với các giải pháp phần mềm tiên tiến được tùy chỉnh theo nhu cầu của bạn.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-red-500 text-white px-8 py-3 rounded-full hover:bg-red-600 transition-colors cursor-pointer">
-                Get Started
+                Bắt Đầu
               </button>
               <button className="border-2 border-red-500 text-red-500 px-8 py-3 rounded-full hover:bg-red-50 transition-colors cursor-pointer">
-                Learn More
+                Tìm Hiểu Thêm
               </button>
             </div>
           </div>
