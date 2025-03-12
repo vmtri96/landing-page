@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -6,10 +7,15 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">TechCorp</h3>
-            <p className="text-gray-400">
-              Transforming businesses through innovative software solutions.
-            </p>
+            <div className="relative w-[200px] h-[50px]">
+              <Image
+                src="/images/trans-logo-white.png"
+                alt="Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
 
           <div>

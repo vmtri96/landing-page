@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,10 +10,14 @@ export default function Header() {
     <header className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-red-500">
-              TechCorp
-            </Link>
+          <div className="relative w-[200px] h-[50px]">
+            <Image
+              src="/images/trans-logo.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
 
           {/* Desktop Navigation */}
