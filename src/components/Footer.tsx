@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="relative w-[200px] h-[50px]">
+            <div className="relative w-[120px] h-[50px] md:w-[150px] md:h-[60px]">
               <Image
                 src="/images/trans-logo-white.png"
                 alt="Logo"

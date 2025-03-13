@@ -10,7 +10,7 @@ export default function Header() {
     <header className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="relative w-[200px] h-[50px]">
+          <div className="relative w-[120px] h-[50px] md:w-[150px] md:h-[60px]">
             <Image
               src="/images/trans-logo.png"
               alt="Logo"
