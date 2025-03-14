@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import {sendEmail} from './EmailSender';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ export default function Contact() {
     e.preventDefault()
     // Handle form submission logic here
     console.log('Form submitted:', formData)
+    sendEmail(formData)
   }
 
   return (
