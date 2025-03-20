@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { sendEmail } from '../services/EmailSender';
 import { ContactForm } from '@/models/Contact';
 import { ContactErrors } from '@/models/Contact';
+import { useModal } from '@/contexts/ModalContext';
 
 export default function Contact() {
   const [formData, setFormData] = useState<ContactForm>({
@@ -18,6 +19,8 @@ export default function Contact() {
     email: '',
     message: '',
   });
+
+  const { showAlert } = useModal();
 
   const validateForm = (): boolean => {
     const formErrors: ContactErrors = { name: '', phoneNumber: '', email: '', message: '' };
@@ -58,8 +61,17 @@ export default function Contact() {
       return;
     }
 
-    console.log('Form submitted:', formData);
-    sendEmail(formData);
+    console.info('Form submitted:', formData);
+    sendEmail(formData).then(() => {
+      showAlert({
+        title: 'Thành công!',
+        message: 'Cảm ơn bạn đã để lại thông tin. Chúng tôi sẽ sớm liên hệ đến bạn!',
+        type: 'success'
+      });
+    }).catch((error) => {
+      console.error('Email was sent failed.', error)
+    });
+    
     setFormData({ name: '', email: '', phoneNumber: '', message: '' });
   };
 

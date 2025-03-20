@@ -26,10 +26,5 @@ export const sendEmail = async (formData: ContactForm) => {
       Message: ${formData.message}.`,
   };
 
-  try {
-    const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent:', info.response);
-  } catch (error) {
-    console.error('Error sending email:', error);
-  }
+  return await transporter.sendMail(mailOptions);
 };
