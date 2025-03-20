@@ -114,7 +114,7 @@ export default function Services() {
                 {service.description}
               </p>
               <button className="mt-6 text-red-500 font-semibold hover:text-red-600 transition-colors cursor-pointer">
-                Learn More →
+                Xem thêm →
               </button>
             </div>
           ))}

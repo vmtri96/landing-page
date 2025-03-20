@@ -69,10 +69,10 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Get In Touch
+              Liên hệ với chúng tôi
             </h2>
             <p className="text-gray-600">
-              Ready to start your digital transformation? Contact us today.
+              Bạn đã sẵn sàng bắt đầu quá trình chuyển đổi số chưa? Hãy liên hệ với chúng tôi ngay hôm nay.
             </p>
           </div>
 
@@ -80,13 +80,13 @@ export default function Contact() {
             <div className="md:flex md:flex-row gap-6">
               <div className="flex-1 mb-5 md:mb-0">
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                  Name
+                  Họ và tên
                 </label>
                 <input
                   type="text"
                   id="name"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-transparent"
-                  placeholder="Your name"
+                  placeholder="Họ và tên của bạn"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
@@ -94,13 +94,13 @@ export default function Contact() {
               </div>
               <div className="flex-1">
                 <label htmlFor="phoneNumber" className="block text-gray-700 font-medium mb-2">
-                  Phone number
+                  Số điện thoại
                 </label>
                 <input
                   type="text"
                   id="phoneNumber"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-transparent"
-                  placeholder="Your phone number"
+                  placeholder="Số điện thoại của bạn"
                   value={formData.phoneNumber}
                   onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                 />
@@ -125,13 +125,13 @@ export default function Contact() {
 
             <div>
               <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                Message
+                Nội dung liên hệ
               </label>
               <textarea
                 id="message"
                 rows={4}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-transparent"
-                placeholder="Your message"
+                placeholder="Nội dung liên hệ"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               />
@@ -143,7 +143,7 @@ export default function Contact() {
                 type="submit"
                 className="bg-red-500 text-white px-8 py-3 rounded-full hover:bg-red-600 transition-colors cursor-pointer"
               >
-                Send Message
+                Gửi liên hệ
               </button>
             </div>
           </form>
