@@ -10,15 +10,17 @@ export default function Header() {
     <header className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="relative w-[120px] h-[50px] md:w-[150px] md:h-[60px]">
-            <Image
-              src="/images/trans-logo.png"
-              alt="Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+          <Link href={"/"}>
+            <div className="relative w-[120px] h-[50px] md:w-[150px] md:h-[60px]">
+              <Image
+                src="/images/trans-logo.png"
+                alt="Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -31,7 +33,7 @@ export default function Header() {
             <Link href="#services" className="text-gray-600 hover:text-red-500 transition-colors">
               Dịch vụ
             </Link>
-            <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
+            {/* <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
               Sản phẩm
             </Link>
             <Link href="#projects" className="text-gray-600 hover:text-red-500 transition-colors">
@@ -39,7 +41,7 @@ export default function Header() {
             </Link>
             <Link href="#clients" className="text-gray-600 hover:text-red-500 transition-colors">
               Khách hàng
-            </Link>
+            </Link> */}
             <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
               Blog/Tin tức
             </Link>
@@ -79,7 +81,7 @@ export default function Header() {
               <Link href="#services" className="text-gray-600 hover:text-red-500 transition-colors">
                 Dịch vụ
               </Link>
-              <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
+              {/* <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
                 Sản phẩm
               </Link>
               <Link href="#projects" className="text-gray-600 hover:text-red-500 transition-colors">
@@ -87,7 +89,7 @@ export default function Header() {
               </Link>
               <Link href="#clients" className="text-gray-600 hover:text-red-500 transition-colors">
                 Khách hàng
-              </Link>
+              </Link> */}
               <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
                 Blog/Tin tức
               </Link>
