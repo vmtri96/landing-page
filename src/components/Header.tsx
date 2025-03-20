@@ -33,15 +33,6 @@ export default function Header() {
             <Link href="/#services" className="text-gray-600 hover:text-red-500 transition-colors">
               Dịch vụ
             </Link>
-            {/* <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
-              Sản phẩm
-            </Link>
-            <Link href="#projects" className="text-gray-600 hover:text-red-500 transition-colors">
-              Dự án
-            </Link>
-            <Link href="#clients" className="text-gray-600 hover:text-red-500 transition-colors">
-              Khách hàng
-            </Link> */}
             <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
               Blog/Tin tức
             </Link>
@@ -81,15 +72,6 @@ export default function Header() {
               <Link href="/#services" className="text-gray-600 hover:text-red-500 transition-colors">
                 Dịch vụ
               </Link>
-              {/* <Link href="#products" className="text-gray-600 hover:text-red-500 transition-colors">
-                Sản phẩm
-              </Link>
-              <Link href="#projects" className="text-gray-600 hover:text-red-500 transition-colors">
-                Dự án
-              </Link>
-              <Link href="#clients" className="text-gray-600 hover:text-red-500 transition-colors">
-                Khách hàng
-              </Link> */}
               <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
                 Blog/Tin tức
               </Link>
