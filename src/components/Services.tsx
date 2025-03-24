@@ -12,6 +12,7 @@ export default function Services() {
         "Phần mềm chuyên ngành theo yêu cầu",
       ],
       image: '/images/custom-software.svg',
+      path: '/services/custom-software-development'
     },
     {
       title: 'Dịch vụ Phát triển Website & Ứng dụng Web',
@@ -23,6 +24,7 @@ export default function Services() {
         "Ứng dụng web tích hợp API, thanh toán trực tuyến"
       ],
       image: '/images/digital-transform.svg',
+      path: '/services/web-development'
     },
     {
       title: 'Dịch vụ Phát triển Ứng dụng Di Động (Mobile App)',
@@ -34,6 +36,7 @@ export default function Services() {
 
       ],
       image: '/images/cloud-migration.svg',
+      path: '/services/mobile-app-development'
     },
     {
       title: 'Dịch vụ Bảo trì & Nâng cấp Phần mềm',
@@ -43,6 +46,7 @@ export default function Services() {
         "Sửa lỗi, nâng cấp giao diện người dùng",
       ],
       image: '/images/cloud-migration.svg',
+      path: '/services/software-maintenance'
     },
     {
       title: 'Gói Phát Triển Phần Mềm Theo Số Lượng Chức Năng & Màn Hình',
@@ -78,6 +82,7 @@ export default function Services() {
         }
       ],
       image: '/images/cloud-migration.svg',
+      path: '/services/software-development-packages'
     }
   ]
 
@@ -113,9 +118,9 @@ export default function Services() {
               <p className="text-gray-600">
                 {service.description}
               </p>
-              <button className="mt-6 text-red-500 font-semibold hover:text-red-600 transition-colors cursor-pointer">
+              <a href={service?.path} className="mt-6 text-red-500 font-semibold hover:text-red-600 transition-colors cursor-pointer">
                 Xem thêm →
-              </button>
+              </a>
             </div>
           ))}
         </div>

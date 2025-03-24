@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AboutUs() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-50">
       <Header />
       <div className="pt-24 pb-12 md:pt-32 md:pb-20 from-blue-50 to-white container mx-auto px-6">
         <h1 className="text-3xl font-bold mb-4">Giới thiệu về Công ty</h1>
