@@ -24,13 +24,13 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#home" className="text-gray-600 hover:text-red-500 transition-colors">
+            <Link href="#home" className="text-gray-600 hover:text-red-500 transition-colors">
               Trang chủ
             </Link>
-            <Link href="/#about" className="text-gray-600 hover:text-red-500 transition-colors">
+            <Link href="#about" className="text-gray-600 hover:text-red-500 transition-colors">
               Giới thiệu
             </Link>
-            <Link href="/#services" className="text-gray-600 hover:text-red-500 transition-colors">
+            <Link href="#services" className="text-gray-600 hover:text-red-500 transition-colors">
               Dịch vụ
             </Link>
             <Link href="#blog" className="text-gray-600 hover:text-red-500 transition-colors">
