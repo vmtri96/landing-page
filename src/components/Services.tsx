@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Services() {
   const services = [
@@ -118,9 +119,9 @@ export default function Services() {
               <p className="text-gray-600">
                 {service.description}
               </p>
-              <a href={service?.path} className="mt-6 text-red-500 font-semibold hover:text-red-600 transition-colors cursor-pointer">
+              <Link href={service?.path} className="mt-6 text-red-500 font-semibold hover:text-red-600 transition-colors cursor-pointer">
                 Xem thêm →
-              </a>
+              </Link>
             </div>
           ))}
         </div>
