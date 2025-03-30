@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, useState } from 'react';
-import { AlertModal } from '@/components/AlertModal';
+import { AlertModal } from '@/components/ui/AlertModal';
 
 interface ModalContextType {
   showAlert: (props: {
