@@ -78,76 +78,78 @@ export default function Home() {
           <h2>Quy trình làm việc</h2>
           <p className="text-content col-sm-12 col-lg-6 text-center">Quy trình thiết kế website, ứng dụng và phần mềm của SmartCode Solutions được xây dựng bài bản và chuyên nghiệp, từ việc tìm hiểu yêu cầu khách hàng đến triển khai và bảo trì.</p>
         </div>
-        <div className="d-flex container flex-wrap justify-content-center">
-          <div className="col-1">
-            <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
-              <img src="/images/workflow-step-01.png" className="img-fluid w-100 h-100"/>
-              <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
-                <span className="text">1</span>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-7 col-sm-3 col-lg-2 col-xl-1">
+              <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
+                <img src="/images/workflow-step-01.png" className="img-fluid w-100 h-100"/>
+                <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
+                  <span className="text">1</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-content text-center">Tư vấn và phân tích yêu cầu</p>
               </div>
             </div>
-            <div>
-              <p className="text-content text-center">Tư vấn và phân tích yêu cầu</p>
-            </div>
-          </div>
-          <div className="col-1 mobile-hidden">{View_1}</div>
-          <div className="col-1">
-            <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
-              <img src="/images/workflow-step-02.png" className="img-fluid w-100 h-100"/>
-              <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
-                <span className="text">2</span>
+            <div className="col-1 mobile-hidden">{View_1}</div>
+            <div className="col-7 col-sm-3 col-lg-2 col-xl-1">
+              <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
+                <img src="/images/workflow-step-02.png" className="img-fluid w-100 h-100"/>
+                <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
+                  <span className="text">2</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-content text-center">Thiết kế UI/UX</p>
               </div>
             </div>
-            <div>
-              <p className="text-content text-center">Thiết kế UI/UX</p>
-            </div>
-          </div>
-          <div className="col-1 mobile-hidden">{View_2}</div>
-          <div className="col-1">
-            <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
-              <img src="/images/workflow-step-03.png" className="img-fluid w-100 h-100"/>
-              <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
-                <span className="text">3</span>
+            <div className="col-1 mobile-hidden">{View_2}</div>
+            <div className="col-7 col-sm-3 col-lg-2 col-xl-1">
+              <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
+                <img src="/images/workflow-step-03.png" className="img-fluid w-100 h-100"/>
+                <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
+                  <span className="text">3</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-content text-center">Demo thiết kế</p>
               </div>
             </div>
-            <div>
-              <p className="text-content text-center">Demo thiết kế</p>
-            </div>
-          </div>
-          <div className="col-1 mobile-hidden">{View_3}</div> 
-          <div className="col-1">
-            <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
-              <img src="/images/workflow-step-04.png" className="img-fluid w-100 h-100"/>
-              <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
-                <span className="text">4</span>
+            <div className="col-1 mobile-hidden">{View_3}</div> 
+            <div className="col-7 col-sm-3 col-lg-2 col-xl-1">
+              <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
+                <img src="/images/workflow-step-04.png" className="img-fluid w-100 h-100"/>
+                <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
+                  <span className="text">4</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-content text-center">Lập trình</p>
               </div>
             </div>
-            <div>
-              <p className="text-content text-center">Lập trình</p>
-            </div>
-          </div>
-          <div className="col-1 mobile-hidden">{View_4}</div> 
-          <div className="col-1">
-            <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
-              <img src="/images/workflow-step-05.png" className="img-fluid w-100 h-100"/>
-              <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
-                <span className="text">5</span>
+            <div className="col-1 mobile-hidden">{View_4}</div> 
+            <div className="col-7 col-sm-3 col-lg-2 col-xl-1">
+              <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
+                <img src="/images/workflow-step-05.png" className="img-fluid w-100 h-100"/>
+                <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
+                  <span className="text">5</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-content text-center">Bàn giao sản phẩm</p>
               </div>
             </div>
-            <div>
-              <p className="text-content text-center">Bàn giao sản phẩm</p>
-            </div>
-          </div>
-          <div className="col-1 mobile-hidden">{View_5}</div> 
-          <div className="col-1">
-            <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
-              <img src="/images/workflow-step-06.png" className="img-fluid w-100 h-100"/>
-              <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
-                <span className="text">6</span>
+            <div className="col-1 mobile-hidden">{View_5}</div> 
+            <div className="col-7 col-sm-3 col-lg-2 col-xl-1">
+              <div className="bg-white rounded-circle mb-3 d-flex justify-content-center align-items-center p-3 position-relative">
+                <img src="/images/workflow-step-06.png" className="img-fluid w-100 h-100"/>
+                <div className="d-flex bg-primary rounded-circle justify-content-center align-items-center badge mobile-hidden">
+                  <span className="text">6</span>
+                </div>
               </div>
-            </div>
-            <div>
-              <p className="text-content text-center">Bảo hành/Bảo trì</p>
+              <div>
+                <p className="text-content text-center">Bảo hành/Bảo trì</p>
+              </div>
             </div>
           </div>
         </div>
