@@ -1,0 +1,238 @@
+[
+  {
+    "name": "Thiết kế website",
+    "packages": [
+      {
+        "title": "GÓI CƠ BẢN",
+        "contents": [
+          { "title": "Website chuẩn HTML5 + CSS3", "check": true },
+          { "title": "Giao diện theo mẫu có sẵn", "check": true },
+          { "title": "Tối ưu tốc độ tải trang cơ bản", "check": true },
+          { "title": "Tương thích hiển thị trên máy tính", "check": true },
+          { "title": "Tối ưu link SEO cơ bản", "check": true },
+          { "title": "Form liên hệ + đăng ký nhận tin", "check": true },
+          { "title": "Khai báo sơ đồ web với Google", "check": true },
+          { "title": "Giao diện mobile/responsive", "check": false },
+          { "title": "Popup quảng cáo", "check": false },
+          { "title": "Đóng dấu bản quyền hình ảnh", "check": false },
+          { "title": "Nút gọi điện / chat Zalo / Messenger", "check": false },
+          { "title": "Google dịch (đa ngôn ngữ cơ bản)", "check": false },
+          { "title": "Tag từ khóa cho bài viết", "check": false }
+        ]
+      },
+      {
+        "title": "GÓI TRUNG CẤP",
+        "contents": [
+          { "title": "Website chuẩn HTML5 + CSS3", "check": true },
+          { "title": "Giao diện theo mẫu có sẵn", "check": true },
+          { "title": "Tối ưu tốc độ tải trang cơ bản", "check": true },
+          { "title": "Tương thích hiển thị trên máy tính", "check": true },
+          { "title": "Tối ưu link SEO cơ bản", "check": true },
+          { "title": "Form liên hệ + đăng ký nhận tin", "check": true },
+          { "title": "Khai báo sơ đồ web với Google", "check": true },
+          { "title": "Giao diện mobile/responsive", "check": true },
+          { "title": "Popup quảng cáo", "check": true },
+          { "title": "Đóng dấu bản quyền hình ảnh", "check": true },
+          { "title": "Nút gọi điện / chat Zalo / Messenger", "check": true },
+          { "title": "Google dịch (đa ngôn ngữ cơ bản)", "check": true },
+          { "title": "Tag từ khóa cho bài viết", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI CAO CẤP",
+        "contents": [
+          { "title": "Tất cả tính năng của gói Trung Cấp", "check": true },
+          { "title": "Thiết kế UI/UX độc quyền", "check": true },
+          {
+            "title": "Tích hợp blog, tin tức, thư viện ảnh/video",
+            "check": true
+          },
+          { "title": "Chatbot tư vấn tự động", "check": true },
+          {
+            "title": "Live chat (Messenger, Zalo, WhatsApp...)",
+            "check": true
+          },
+          { "title": "Tối ưu SEO nâng cao", "check": true },
+          { "title": "Google Analytics & Facebook Pixel", "check": true },
+          { "title": "Hệ thống quản trị nội dung (CMS)", "check": true },
+          { "title": "Bảo trì miễn phí 6–12 tháng", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI TUỲ CHỌN",
+        "contents": [
+          { "title": "Thiết kế theo yêu cầu đặc biệt", "check": true },
+          { "title": "Website đa ngôn ngữ nâng cao", "check": true },
+          { "title": "Chức năng đặt hàng, giỏ hàng", "check": true },
+          {
+            "title": "Tích hợp cổng thanh toán (VNPay, Momo, PayPal...)",
+            "check": true
+          },
+          { "title": "Tích hợp CRM, ERP", "check": true },
+          { "title": "Đồng bộ với hệ thống nội bộ", "check": true },
+          { "title": "Hệ thống thành viên, phân quyền", "check": true },
+          {
+            "title": "Tư vấn chiến lược nội dung & thương hiệu",
+            "check": true
+          },
+          { "title": "Hosting và domain theo yêu cầu", "check": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thiết kế ứng dụng di động",
+    "packages": [
+      {
+        "title": "GÓI CƠ BẢN",
+        "contents": [
+          { "title": "Ứng dụng native/hybrid cơ bản", "check": true },
+          { "title": "Thiết kế theo mẫu có sẵn", "check": true },
+          { "title": "Giao diện tương thích Android", "check": true },
+          { "title": "Form đăng ký, đăng nhập", "check": true },
+          { "title": "Tối ưu hiệu năng cơ bản", "check": true },
+          { "title": "Tự động gửi thông báo (basic)", "check": false },
+          { "title": "Phiên bản iOS", "check": false },
+          { "title": "Tùy chỉnh giao diện mobile nâng cao", "check": false }
+        ]
+      },
+      {
+        "title": "GÓI TRUNG CẤP",
+        "contents": [
+          { "title": "Tất cả tính năng của gói cơ bản", "check": true },
+          { "title": "Giao diện tuỳ chỉnh theo thương hiệu", "check": true },
+          { "title": "Hỗ trợ cả Android và iOS", "check": true },
+          {
+            "title": "Tự động gửi thông báo (push notification)",
+            "check": true
+          },
+          { "title": "Quản lý nội dung đơn giản", "check": true },
+          { "title": "Tích hợp API từ hệ thống có sẵn", "check": true },
+          { "title": "Hướng dẫn upload lên CH Play", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI CAO CẤP",
+        "contents": [
+          { "title": "Tất cả tính năng gói trung cấp", "check": true },
+          { "title": "Thiết kế UI/UX riêng biệt", "check": true },
+          { "title": "Tích hợp đa ngôn ngữ", "check": true },
+          { "title": "Quản lý dữ liệu người dùng", "check": true },
+          { "title": "Đồng bộ với hệ thống website hoặc CRM", "check": true },
+          { "title": "Phân quyền người dùng", "check": true },
+          { "title": "Tối ưu hiệu năng nâng cao", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI TUỲ CHỌN",
+        "contents": [
+          {
+            "title": "Ứng dụng theo đặc thù ngành (giáo dục, bán hàng...)",
+            "check": true
+          },
+          { "title": "Tích hợp thanh toán online", "check": true },
+          { "title": "Tích hợp bản đồ, GPS", "check": true },
+          { "title": "Camera, quét mã QR", "check": true },
+          { "title": "Hệ thống quản trị (CMS) riêng", "check": true },
+          { "title": "Tư vấn chiến lược phát triển app", "check": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thiết kế phần mềm",
+    "packages": [
+      {
+        "title": "GÓI CƠ BẢN",
+        "contents": [
+          { "title": "Giao diện phần mềm đơn giản", "check": true },
+          { "title": "Chức năng nhập – xuất dữ liệu cơ bản", "check": true },
+          { "title": "Tạo tài khoản và đăng nhập", "check": true },
+          { "title": "Cài đặt offline hoặc cục bộ", "check": true },
+          { "title": "Chạy được trên Windows", "check": true },
+          { "title": "Không có kết nối Internet/Cloud", "check": false },
+          { "title": "Không phân quyền người dùng", "check": false }
+        ]
+      },
+      {
+        "title": "GÓI TRUNG CẤP",
+        "contents": [
+          { "title": "Giao diện nâng cấp, thân thiện", "check": true },
+          { "title": "Tích hợp nhiều chức năng xử lý dữ liệu", "check": true },
+          { "title": "Chạy đa nền tảng (Windows/Mac)", "check": true },
+          { "title": "Tạo báo cáo xuất file (Excel, PDF...)", "check": true },
+          { "title": "Có phân quyền người dùng", "check": true },
+          { "title": "Kết nối Internet để cập nhật dữ liệu", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI CAO CẤP",
+        "contents": [
+          { "title": "Thiết kế theo quy trình nghiệp vụ", "check": true },
+          { "title": "Chạy web-based hoặc cloud-based", "check": true },
+          { "title": "Tối ưu bảo mật và tốc độ", "check": true },
+          { "title": "Tích hợp hệ thống camera, thiết bị IoT", "check": true },
+          { "title": "Chức năng nâng cao theo yêu cầu", "check": true },
+          { "title": "Quản lý user nâng cao", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI TUỲ CHỌN",
+        "contents": [
+          { "title": "Phát triển phần mềm chuyên biệt", "check": true },
+          { "title": "Tích hợp hệ thống ERP, CRM", "check": true },
+          { "title": "Kết nối với thiết bị phần cứng", "check": true },
+          { "title": "Triển khai máy chủ riêng / Cloud Server", "check": true },
+          { "title": "Tư vấn & thiết kế kiến trúc hệ thống", "check": true }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bảo trì & nâng cấp phần mềm",
+    "packages": [
+      {
+        "title": "GÓI CƠ BẢN",
+        "contents": [
+          { "title": "Sao lưu dữ liệu định kỳ", "check": true },
+          { "title": "Sửa lỗi cơ bản phát sinh", "check": true },
+          { "title": "Tư vấn kỹ thuật cơ bản", "check": true },
+          { "title": "Hỗ trợ qua email", "check": true },
+          { "title": "Không hỗ trợ 24/7", "check": false }
+        ]
+      },
+      {
+        "title": "GÓI TRUNG CẤP",
+        "contents": [
+          { "title": "Tất cả tính năng của gói cơ bản", "check": true },
+          { "title": "Nâng cấp tính năng nhỏ", "check": true },
+          { "title": "Tối ưu hiệu năng hệ thống", "check": true },
+          { "title": "Hỗ trợ qua Zalo/email nhanh chóng", "check": true },
+          { "title": "Thời gian phản hồi < 24h", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI CAO CẤP",
+        "contents": [
+          { "title": "Giám sát hệ thống theo thời gian thực", "check": true },
+          {
+            "title": "Nâng cấp giao diện, chức năng theo yêu cầu",
+            "check": true
+          },
+          { "title": "Phân tích & đánh giá hiệu suất phần mềm", "check": true },
+          { "title": "Tối ưu bảo mật định kỳ", "check": true },
+          { "title": "Hỗ trợ kỹ thuật 24/7", "check": true }
+        ]
+      },
+      {
+        "title": "GÓI TUỲ CHỌN",
+        "contents": [
+          { "title": "Chuyển đổi công nghệ", "check": true },
+          { "title": "Tích hợp tính năng mới phức tạp", "check": true },
+          { "title": "Tư vấn kiến trúc & mở rộng hệ thống", "check": true },
+          { "title": "Bảo trì theo SLA linh hoạt", "check": true }
+        ]
+      }
+    ]
+  }
+]
