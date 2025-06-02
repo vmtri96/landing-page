@@ -2,6 +2,7 @@
 import Header from "@/components/Header";
 import { useLottie } from "lottie-react";
 import * as workflowNextStep from "@/assets/workflow-next-step.json";
+import Services from "@/components/Services";
 
 
 export default function Home() {
@@ -154,6 +155,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Services/>
     </div>
   );
 }
