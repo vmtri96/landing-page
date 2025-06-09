@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { useLottie } from "lottie-react";
 import * as workflowNextStep from "@/assets/workflow-next-step.json";
 import Services from "@/components/Services";
+import ContactForm from "@/components/Contact";
 
 export default function Home() {
   const { View: View_1 } = useLottie({
@@ -187,6 +188,8 @@ export default function Home() {
       </section>
 
       <Services />
+
+      <ContactForm />
     </div>
   );
 }
