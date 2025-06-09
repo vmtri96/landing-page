@@ -19,7 +19,7 @@ const Header = () => {
             <p>
               <i className="bi bi-telephone"></i> Số điện thoại: 0973023736 |{" "}
               <i className="bi bi-envelope-check"></i> Email:
-              smartcodesolutions@gmail.com
+              smartcodesolutions.vn@gmail.com
             </p>
           </div>
           <div className="w-auto text-white ms-auto">

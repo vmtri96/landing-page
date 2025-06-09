@@ -1,36 +1,36 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { sendEmail } from '../../services/emailService';
+import { useState } from "react";
+import { sendEmail } from "../../services/emailService";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('sending');
+    setStatus("sending");
 
     try {
       await sendEmail(formData);
-      setStatus('success');
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setStatus("success");
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
-      console.error('Error sending email:', error);
-      setStatus('error');
+      console.error("Error sending email:", error);
+      setStatus("error");
     }
   };
 
@@ -40,10 +40,14 @@ const ContactForm = () => {
         <div className="col-md-8 col-lg-6">
           <div className="card shadow">
             <div className="card-body p-4">
-              <h2 className="card-title text-center mb-4">Contact Us</h2>
+              <h2 className="card-title text-center mb-4">
+                Liên Hệ Với Chúng Tôi
+              </h2>
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                  <label htmlFor="name" className="form-label">Name</label>
+                  <label htmlFor="name" className="form-label">
+                    Họ và tên
+                  </label>
                   <input
                     type="text"
                     className="form-control"
@@ -52,12 +56,14 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Your name"
+                    placeholder="Nhập họ và tên của bạn"
                   />
                 </div>
 
                 <div className="mb-3">
-                  <label htmlFor="email" className="form-label">Email</label>
+                  <label htmlFor="email" className="form-label">
+                    Email
+                  </label>
                   <input
                     type="email"
                     className="form-control"
@@ -66,12 +72,14 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="your.email@example.com"
+                    placeholder="Nhập địa chỉ email của bạn"
                   />
                 </div>
 
                 <div className="mb-3">
-                  <label htmlFor="phone" className="form-label">Phone Number</label>
+                  <label htmlFor="phone" className="form-label">
+                    Số điện thoại
+                  </label>
                   <input
                     type="tel"
                     className="form-control"
@@ -79,13 +87,15 @@ const ContactForm = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="Nhập số điện thoại của bạn"
                     pattern="[0-9+\s-()]*"
                   />
                 </div>
 
                 <div className="mb-3">
-                  <label htmlFor="message" className="form-label">Message</label>
+                  <label htmlFor="message" className="form-label">
+                    Nội dung
+                  </label>
                   <textarea
                     className="form-control"
                     id="message"
@@ -94,7 +104,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                     rows="4"
-                    placeholder="Your message here..."
+                    placeholder="Nhập nội dung tin nhắn của bạn..."
                   ></textarea>
                 </div>
 
@@ -102,27 +112,31 @@ const ContactForm = () => {
                   <button
                     type="submit"
                     className="btn btn-primary"
-                    disabled={status === 'sending'}
+                    disabled={status === "sending"}
                   >
-                    {status === 'sending' ? (
+                    {status === "sending" ? (
                       <>
-                        <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                        Sending...
+                        <span
+                          className="spinner-border spinner-border-sm me-2"
+                          role="status"
+                          aria-hidden="true"
+                        ></span>
+                        Đang gửi...
                       </>
                     ) : (
-                      'Send Message'
+                      "Gửi tin nhắn"
                     )}
                   </button>
                 </div>
 
-                {status === 'success' && (
+                {status === "success" && (
                   <div className="alert alert-success mt-3 mb-0" role="alert">
-                    Message sent successfully!
+                    Gửi tin nhắn thành công!
                   </div>
                 )}
-                {status === 'error' && (
+                {status === "error" && (
                   <div className="alert alert-danger mt-3 mb-0" role="alert">
-                    Failed to send message. Please try again.
+                    Gửi tin nhắn thất bại. Vui lòng thử lại.
                   </div>
                 )}
               </form>
@@ -134,4 +148,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm; 
+export default ContactForm;
