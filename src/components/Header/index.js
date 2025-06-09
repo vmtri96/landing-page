@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [menu, setMenu] = useState([
@@ -8,7 +9,7 @@ const Header = () => {
     { name: "Tin tức", link: "#" },
     { name: "Giới thiệu", link: "#" },
     { name: "FAQs", link: "#" },
-  ])
+  ]);
   const [open, setOpen] = useState(false);
 
   return (
@@ -30,25 +31,32 @@ const Header = () => {
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" href="#">
             <img src="/images/trans-logo.png" />
-          </a>
-          <button className="navbar-toggler" type="button" onClick={setOpen.bind(null, !open)}>
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={setOpen.bind(null, !open)}
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className={`collapse navbar-collapse ${open ? "show" : ""}`}>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {menu.map((item, index) => (
                 <li className="nav-item" key={index}>
-                  <a className={`nav-link ${item.active ? "active" : ""}`} href={item.link}>
+                  <Link
+                    className={`nav-link ${item.active ? "active" : ""}`}
+                    href={item.link}
+                  >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
-            <button className="btn btn-primary">
+            <Link className="btn btn-primary" href="#contact">
               Liên hệ
-            </button>
+            </Link>
           </div>
         </div>
       </nav>

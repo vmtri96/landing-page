@@ -1,21 +1,21 @@
-'use server';
+"use server";
 
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 // Create a transporter using Gmail SMTP
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
     user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD
-  }
+    pass: process.env.GMAIL_APP_PASSWORD,
+  },
 });
 
 const sendCustomerEmail = async ({ name, email }) => {
   const mailOptions = {
     from: process.env.GMAIL_USER,
     to: email,
-    subject: 'Cảm ơn Quý khách đã liên hệ với Smart Code Solutions',
+    subject: "Cảm ơn Quý khách đã liên hệ với Smart Code Solutions",
     html: `
       <div style="font-family: Arial, sans-serif; line-height: 1.6;">
         <p>Kính gửi Quý khách ${name},</p>
@@ -30,11 +30,11 @@ const sendCustomerEmail = async ({ name, email }) => {
         
         <p>Trân trọng,<br>
         Smart Code Solutions<br>
-        Website: <a href="https://www.smartcodesolutions.vn">https://www.smartcodesolutions.vn</a><br>
+        Website: <Link href="https://www.smartcodesolutions.vn">https://www.smartcodesolutions.vn</Link><br>
         Email: smartcodesolutions@gmail.com<br>
         Hotline: 0973 023 736</p>
       </div>
-    `
+    `,
   };
 
   return transporter.sendMail(mailOptions);
@@ -52,7 +52,7 @@ const sendAdminEmail = async ({ name, email, phone, message }) => {
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Message:</strong></p>
       <p>${message}</p>
-    `
+    `,
   };
 
   return transporter.sendMail(mailOptions);
@@ -62,13 +62,13 @@ const sendEmail = async (formData) => {
   try {
     // Send email to customer
     await sendCustomerEmail(formData);
-    
+
     // Send email to admin
     await sendAdminEmail(formData);
-    
+
     return { success: true };
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error("Error sending email:", error);
     throw error;
   }
 };

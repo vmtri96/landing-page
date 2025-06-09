@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <section className="d-flex container py-5 align-items-center flex-wrap justify-content-center">
@@ -14,7 +16,9 @@ const Hero = () => {
           phần mềm chuyên nghiệp, tối ưu SEO và trải nghiệm người dùng. Hãy bắt
           đầu hành trình số hóa doanh nghiệp của bạn!
         </p>
-        <button className="btn btn-primary">Liên hệ ngay</button>
+        <Link className="btn btn-primary" href="#contact">
+          Liên hệ ngay
+        </Link>
       </div>
       <div className="col-6 mobile-hidden ps-3">
         <img

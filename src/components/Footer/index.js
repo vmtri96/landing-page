@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
     // Handle newsletter subscription
-    console.log('Newsletter subscription:', email);
-    setEmail('');
+    console.log("Newsletter subscription:", email);
+    setEmail("");
   };
 
   return (
@@ -24,11 +24,12 @@ const Footer = () => {
               <img
                 src="/images/trans-logo-white.png"
                 alt="Smart Code Solutions"
-                style={{ width: '180px', height: 'auto' }}
+                style={{ width: "180px", height: "auto" }}
                 className="mb-3"
               />
               <p>
-                Smart Code Solutions cung cấp giải pháp phần mềm tùy chỉnh, tối ưu hiệu suất và trải nghiệm người dùng.
+                Smart Code Solutions cung cấp giải pháp phần mềm tùy chỉnh, tối
+                ưu hiệu suất và trải nghiệm người dùng.
               </p>
             </div>
           </div>
@@ -87,17 +88,20 @@ const Footer = () => {
               <div className="col-6">
                 <ul className="list-unstyled">
                   <li className="mb-2">
-                    <Link href="/contact" className="text-light text-decoration-none">
+                    <Link
+                      href="#contact"
+                      className="text-light text-decoration-none"
+                    >
                       Liên hệ
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/privacy" className="text-light text-decoration-none">
+                    <Link href="#" className="text-light text-decoration-none">
                       Chính sách bảo mật
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link href="/terms" className="text-light text-decoration-none">
+                    <Link href="#" className="text-light text-decoration-none">
                       Điều khoản sử dụng
                     </Link>
                   </li>
@@ -131,20 +135,42 @@ const Footer = () => {
 
           {/* Social Media */}
           <div className="col-lg-6 mt-4 mt-lg-0">
-            <h5 className="mb-3 text-lg-end text-start">Kết nối với chúng tôi</h5>
+            <h5 className="mb-3 text-lg-end text-start">
+              Kết nối với chúng tôi
+            </h5>
             <div className="d-flex justify-content-lg-end justify-content-start gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-light fs-4">
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4"
+              >
                 <i className="bi bi-facebook"></i>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-light fs-4">
+              </Link>
+              <Link
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4"
+              >
                 <i className="bi bi-linkedin"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-light fs-4">
+              </Link>
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4"
+              >
                 <i className="bi bi-instagram"></i>
-              </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-light fs-4">
+              </Link>
+              <Link
+                href="https://tiktok.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4"
+              >
                 <i className="bi bi-tiktok"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -153,7 +179,8 @@ const Footer = () => {
         <div className="row mt-4 pt-4 border-top">
           <div className="col-12 text-center">
             <p className="mb-3">
-              © {new Date().getFullYear()} Smart Code Solutions. All rights reserved.
+              © {new Date().getFullYear()} Smart Code Solutions. All rights
+              reserved.
             </p>
           </div>
         </div>

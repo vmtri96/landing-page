@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import data from "./data.json";
 
@@ -61,7 +62,9 @@ const Services = () => {
                   <div className="shadow rounded rounded-3 p-4">
                     <div className="d-flex align-items-center justify-content-between">
                       <p>{packageItem?.title}</p>
-                      <button className="btn btn-primary">Liên hệ</button>
+                      <Link className="btn btn-primary" href="#contact">
+                        Liên hệ
+                      </Link>
                     </div>
                     <hr />
                     {packageItem?.contents.map((content, contentIndex) => (

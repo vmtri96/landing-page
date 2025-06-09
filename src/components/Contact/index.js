@@ -35,7 +35,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container p-5">
+    <div className="container p-5" id="contact">
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6">
           <div className="card shadow">
