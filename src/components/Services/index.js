@@ -59,7 +59,7 @@ const Services = () => {
                   key={packageIndex}
                   className="col-xs-12 col-sm-6 col-xl-3 mb-4"
                 >
-                  <div className="shadow rounded rounded-3 p-4">
+                  <div className="shadow rounded rounded-3 p-4 h-100 d-flex flex-column">
                     <div className="d-flex align-items-center justify-content-between">
                       <p>{packageItem?.title}</p>
                       <Link className="btn btn-primary" href="#contact">
@@ -67,19 +67,21 @@ const Services = () => {
                       </Link>
                     </div>
                     <hr />
-                    {packageItem?.contents.map((content, contentIndex) => (
-                      <div
-                        key={contentIndex}
-                        className="d-flex align-items-center gap-2"
-                      >
-                        {content?.check ? (
-                          <i className="bi bi-check-lg text-success"></i>
-                        ) : (
-                          <i className="bi bi-x-lg text-danger"></i>
-                        )}
-                        <p>{content.title}</p>
-                      </div>
-                    ))}
+                    <div className="flex-grow-1">
+                      {packageItem?.contents.map((content, contentIndex) => (
+                        <div
+                          key={contentIndex}
+                          className="d-flex align-items-center gap-2"
+                        >
+                          {content?.check ? (
+                            <i className="bi bi-check-lg text-success"></i>
+                          ) : (
+                            <i className="bi bi-x-lg text-danger"></i>
+                          )}
+                          <p>{content.title}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
