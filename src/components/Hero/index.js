@@ -1,33 +1,52 @@
 import Link from "next/link";
+import styles from "@/styles/hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className="d-flex container py-5 align-items-center flex-wrap justify-content-center">
-      <div className="col-sm-12 col-lg-6 mb-lg-3 mb-xl-0">
-        <div className="d-flex bg-primary text-white rounded-circle mb-3 justify-content-center align-items-center icon">
-          <i className="bi bi-buildings-fill"></i>
-        </div>
-        <p className="text-primary fw-bold">SmartCode Solutions</p>
-        <h2 className="text-primary">
-          Giải pháp công nghệ thông minh - SmartCode Solutions
-        </h2>
-        <p className="text-content mb-3">
-          SmartCode Solutions mang đến giải pháp thiết kế website, ứng dụng và
-          phần mềm chuyên nghiệp, tối ưu SEO và trải nghiệm người dùng. Hãy bắt
-          đầu hành trình số hóa doanh nghiệp của bạn!
-        </p>
-        <Link className="btn btn-primary" href="#contact">
-          Liên hệ ngay
-        </Link>
-      </div>
-      <div className="col-6 mobile-hidden ps-3">
-        <img
-          src="/images/overview.svg"
-          alt="Hero Image"
-          className="img-fluid"
-        />
+    <section className="container border-bottom mb-5">
+      <div className={`${styles.heroWrapper} d-flex gap-5 py-5 align-items-center`}>
+          <div>
+              <h1 className="display-3 fw-medium mb-4">Giải pháp công nghệ thông minh - SmartCode Solutions</h1>
+              <p className="mb-4">SmartCode Solutions mang đến giải pháp thiết kế website, ứng dụng và phần mềm chuyên nghiệp, tối ưu SEO và trải nghiệm người dùng. Hãy bắt đầu hành trình số hóa doanh nghiệp của bạn!</p>
+              <Link className="btn btn-primary rounded-pill px-3 py-2" href="#">Liên hệ ngay
+              </Link>
+          </div>
+
+          <div>
+              <img
+                src="/images/hero.jpg"
+                alt="Hero Image"
+                className="w-100 rounded-3"
+              />
+          </div>
       </div>
     </section>
+      // <section className="d-flex container py-5 align-items-center flex-wrap justify-content-center">
+    //   <div className="col-sm-12 col-lg-6 mb-lg-3 mb-xl-0">
+    //     <div className="d-flex bg-primary text-white rounded-circle mb-3 justify-content-center align-items-center icon">
+    //       <i className="bi bi-buildings-fill"></i>
+    //     </div>
+    //     <p className="text-primary fw-bold">SmartCode Solutions</p>
+    //     <h2 className="text-primary">
+    //       Giải pháp công nghệ thông minh - SmartCode Solutions
+    //     </h2>
+    //     <p className="text-content mb-3">
+    //       SmartCode Solutions mang đến giải pháp thiết kế website, ứng dụng và
+    //       phần mềm chuyên nghiệp, tối ưu SEO và trải nghiệm người dùng. Hãy bắt
+    //       đầu hành trình số hóa doanh nghiệp của bạn!
+    //     </p>
+    //     <Link className="btn btn-primary" href="#contact">
+    //       Liên hệ ngay
+    //     </Link>
+    //   </div>
+    //   <div className="col-6 mobile-hidden ps-3">
+    //     <img
+    //       src="/images/overview.svg"
+    //       alt="Hero Image"
+    //       className="img-fluid"
+    //     />
+    //   </div>
+    // </section>
   );
 };
 
