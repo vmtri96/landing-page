@@ -1,9 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --red-300: oklch(80.8% .114 19.571);
-  --red-500: oklch(.637 .237 25.331);
-  --red-600: oklch(.577 .245 27.325);
+  --red-300: oklch(80.8% 0.114 19.571);
+  --red-500: oklch(0.637 0.237 25.331);
+  --red-600: oklch(0.577 0.245 27.325);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,11 +50,21 @@ a {
   background-color: var(--red-300) !important;
 }
 
+.bg-grey-light {
+  background-color: #e3e3e3 !important;
+}
+
 p {
   margin-bottom: 0;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   padding-left: 0;
   padding-right: 0;
 }

@@ -51,7 +51,7 @@ const WorkingProcess = () => {
   });
 
   return (
-    <section className="container-fluid bg-primary-light py-5">
+    <section className="container-fluid bg-grey-light py-5">
       <div className="d-flex flex-column container mb-3 align-items-center flex-wrap justify-content-center">
         <h2>Quy trình làm việc</h2>
         <p className="text-content col-sm-12 col-lg-6 text-center">
