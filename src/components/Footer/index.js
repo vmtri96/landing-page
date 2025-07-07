@@ -1,188 +1,121 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { FiFacebook, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
 
-  const handleNewsletterSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle newsletter subscription
-    console.log("Newsletter subscription:", email);
+    // Here you would typically handle the newsletter subscription
+    console.log("Subscribing email:", email);
     setEmail("");
+    // Show success message or handle errors
   };
 
   return (
-    <footer className="bg-dark text-light pt-5">
-      <div className="container">
-        <div className="row g-4">
-          {/* Company Info */}
-          <div className="col-lg-4">
-            <div className="mb-4">
+    <footer className="bg-gray-900 text-gray-300 pt-24 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Top section */}
+        <div className="flex flex-col lg:flex-row gap-12 mb-16">
+          {/* Left column */}
+          <div className="lg:w-1/2 pr-0 lg:pr-8">
+            <Link href="/" className="inline-block mb-6">
               <img
-                src="/images/trans-logo-white.png"
-                alt="Smart Code Solutions"
-                style={{ width: "180px", height: "auto" }}
-                className="mb-3"
+                src="/images/newlogo-white.png"
+                alt="SmartCode Solutions"
+                className="h-10"
               />
-              <p>
-                Smart Code Solutions cung cấp giải pháp phần mềm tùy chỉnh, tối
-                ưu hiệu suất và trải nghiệm người dùng.
-              </p>
-            </div>
-          </div>
+            </Link>
 
-          {/* Contact Info */}
-          <div className="col-lg-4">
-            <h5 className="mb-3">Thông tin liên hệ</h5>
-            <ul className="list-unstyled">
-              <li className="mb-2">
-                <i className="bi bi-geo-alt me-2"></i>
-                Ninh Kiều, TP. Cần Thơ
-              </li>
-              <li className="mb-2">
-                <i className="bi bi-telephone me-2"></i>
-                0973 023 736
-              </li>
-              <li className="mb-2">
-                <i className="bi bi-envelope me-2"></i>
-                smartcodesolutions.vn@gmail.com
-              </li>
-              <li className="mb-2">
-                <i className="bi bi-clock me-2"></i>
-                Thứ 2 - Thứ 6, 09:00 - 18:30
-              </li>
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div className="col-lg-4">
-            <h5 className="mb-3">Liên kết nhanh</h5>
-            <div className="row">
-              <div className="col-6">
-                <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <Link href="#" className="text-light text-decoration-none">
-                      Dịch vụ
-                    </Link>
-                  </li>
-                  <li className="mb-2">
-                    <Link href="#" className="text-light text-decoration-none">
-                      Tin tức
-                    </Link>
-                  </li>
-                  <li className="mb-2">
-                    <Link href="#" className="text-light text-decoration-none">
-                      Giới thiệu
-                    </Link>
-                  </li>
-                  <li className="mb-2">
-                    <Link href="#" className="text-light text-decoration-none">
-                      FAQs
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-6">
-                <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <Link
-                      href="#contact"
-                      className="text-light text-decoration-none"
-                    >
-                      Liên hệ
-                    </Link>
-                  </li>
-                  <li className="mb-2">
-                    <Link href="#" className="text-light text-decoration-none">
-                      Chính sách bảo mật
-                    </Link>
-                  </li>
-                  <li className="mb-2">
-                    <Link href="#" className="text-light text-decoration-none">
-                      Điều khoản sử dụng
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="row mt-4">
-          <div className="col-lg-6">
-            <h5 className="mb-3">Đăng ký nhận tin</h5>
-            <p className="mb-3">
-              Nhận ngay thông tin ưu đãi & cập nhật mới nhất!
+            <p className="text-gray-400 mb-8 max-w-md">
+              SmartCode Solutions cung cấp dịch vụ phát triển phần mềm chuyên
+              nghiệp, giải pháp tùy chỉnh và dịch vụ chuyển đổi số. Chuyển đổi
+              doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến của
+              chúng tôi.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="d-flex gap-2">
+
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col sm:flex-row gap-3 mb-8"
+            >
               <input
                 type="email"
-                className="form-control w-75"
-                placeholder="Email của bạn"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+                className="px-4 py-3 bg-transparent border border-gray-600 rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 flex-grow"
                 required
               />
-              <button type="submit" className="btn btn-primary">
-                Đăng ký
+              <button
+                type="submit"
+                className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-white hover:text-blue-600 transition-colors duration-300"
+              >
+                Get Started
               </button>
             </form>
           </div>
 
-          {/* Social Media */}
-          <div className="col-lg-6 mt-4 mt-lg-0">
-            <h5 className="mb-3 text-lg-end text-start">
-              Kết nối với chúng tôi
-            </h5>
-            <div className="d-flex justify-content-lg-end justify-content-start gap-3">
-              <Link
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light fs-4"
-              >
-                <i className="bi bi-facebook"></i>
-              </Link>
-              <Link
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light fs-4"
-              >
-                <i className="bi bi-linkedin"></i>
-              </Link>
-              <Link
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light fs-4"
-              >
-                <i className="bi bi-instagram"></i>
-              </Link>
-              <Link
-                href="https://tiktok.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light fs-4"
-              >
-                <i className="bi bi-tiktok"></i>
-              </Link>
+          {/* Vertical divider */}
+          <div className="hidden lg:block w-px bg-gray-700 mx-4"></div>
+
+          {/* Right column */}
+          <div className="lg:w-1/2 pl-0 lg:pl-8">
+            <div>
+              <h3 className="text-white text-lg font-semibold mb-4">Phone</h3>
+              <p className="text-gray-400 mb-8">0973 023 736</p>
+
+              <h3 className="text-white text-lg font-semibold mb-4">Email</h3>
+              <p className="text-gray-400">smartcodesolutions@gmail.com</p>
             </div>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="row mt-4 pt-4 border-top">
-          <div className="col-12 text-center">
-            <p className="mb-3">
-              © {new Date().getFullYear()} Smart Code Solutions. All rights
-              reserved.
-            </p>
+        {/* Center divider */}
+        <div className="border-t border-gray-700 my-8"></div>
+
+        {/* Bottom section */}
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex space-x-4 mb-6 md:mb-0">
+            <Link
+              href="#"
+              className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-colors duration-300"
+            >
+              <FiFacebook />
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-colors duration-300"
+            >
+              <FiLinkedin />
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-colors duration-300"
+            >
+              <FiInstagram />
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-colors duration-300"
+            >
+              <FaTiktok className="text-sm" />
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-colors duration-300"
+            >
+              <FiTwitter />
+            </Link>
           </div>
+
+          <p className="text-gray-500 text-sm">
+            © {new Date().getFullYear()} SmartCode Solutions. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,5 @@
 import { Montserrat } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons//font/bootstrap-icons.css";
-import "./globals.scss";
+import "./globals.css";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -61,11 +59,6 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  // verification: {
-  //   google: "your-google-site-verification",
-  //   yandex: "your-yandex-verification",
-  //   bing: "your-bing-verification",
-  // },
 };
 
 export default function RootLayout({ children }) {
