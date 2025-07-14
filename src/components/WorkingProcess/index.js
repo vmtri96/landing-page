@@ -103,8 +103,8 @@ const WorkingProcess = () => {
     { id: 1, name: "Phân tích", icon: <AnalyzeIcon /> },
     { id: 2, name: "Thiết kế UI/UX", icon: <UiUxIcon /> },
     { id: 3, name: "Demo thiết kế", icon: <DemoIcon /> },
-    { id: 4, name: "Lập trình", icon: <ImplementIcon /> },
     { id: 5, name: "Bàn giao", icon: <ReleaseIcon /> },
+    { id: 4, name: "Lập trình", icon: <ImplementIcon /> },
     { id: 6, name: "Bảo trì", icon: <MaintainIcon /> },
   ];
 
