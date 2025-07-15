@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FiFacebook, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
 import { FaTiktok } from "react-icons/fa";
 
@@ -24,9 +25,11 @@ const Footer = () => {
           {/* Left column */}
           <div className="lg:w-1/2 pr-0 lg:pr-8">
             <Link href="/" className="inline-block mb-6">
-              <img
+              <Image
                 src="/images/newlogo-white.png"
                 alt="SmartCode Solutions"
+                width={120}
+                height={40}
                 className="h-10"
               />
             </Link>

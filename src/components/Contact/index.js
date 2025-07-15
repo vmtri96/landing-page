@@ -38,6 +38,7 @@ const Contact = () => {
       setSubmitSuccess(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
+      console.error("Form submission error:", error);
       setSubmitError(true);
     } finally {
       setIsSubmitting(false);
