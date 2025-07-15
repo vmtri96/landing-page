@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from "@/styles/hero.module.scss";
+import Image from "next/image";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,9 +53,11 @@ const Hero = () => {
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
           }`}
         >
-          <img
+          <Image
             src="/images/hero.jpg"
             alt="Hero Image"
+            width={600}
+            height={400}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>

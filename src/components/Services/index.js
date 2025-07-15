@@ -59,7 +59,7 @@ const Services = () => {
         if (ref) observer.unobserve(ref);
       });
     };
-  }, [activeTab, servicesData]);
+  }, [activeTab]);
 
   // Function to set ref for each card
   const setCardRef = (element, index) => {

@@ -1,15 +1,16 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
-  const [menu, setMenu] = useState([
+  const menu = [
     { name: "Trang chủ", link: "#", active: true },
     { name: "Dịch vụ", link: "#" },
     { name: "Tin tức", link: "#" },
     { name: "Giới thiệu", link: "#" },
     { name: "FAQs", link: "#" },
-  ]);
+  ];
   const [open, setOpen] = useState(false);
 
   return (
@@ -18,9 +19,11 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link className="flex-shrink-0 mr-8" href="#">
-              <img
+              <Image
                 src="/images/newlogo.png"
                 alt="logo here"
+                width={120}
+                height={40}
                 className="h-8 md:h-10"
               />
             </Link>
