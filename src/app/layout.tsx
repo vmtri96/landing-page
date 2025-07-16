@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "SmartCode Solutions",
     images: [
       {
-        url: "/images/newlogo.png",
+        url: "/images/logo-name-blue.png",
         width: 1200,
         height: 630,
         alt: "SmartCode Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
@@ -46,7 +46,7 @@ export const metadata = {
     title: "SmartCode Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
       "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp của chúng tôi.",
-    images: ["/images/newlogo.png"],
+    images: ["/images/logo-name-blue.png"],
   },
   robots: {
     index: true,
@@ -72,4 +72,3 @@ export default function RootLayout({
     </html>
   );
 }
-// test commit

@@ -20,9 +20,9 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <Link className="flex-shrink-0 mr-8" href="#hero">
               <Image
-                src="/images/newlogo.png"
+                src="/images/logo-name-blue.png"
                 alt="logo here"
-                width={120}
+                width={40}
                 height={40}
                 className="h-8 md:h-10"
               />

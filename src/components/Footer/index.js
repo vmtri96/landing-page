@@ -26,11 +26,10 @@ const Footer = () => {
           <div className="lg:w-1/2 pr-0 lg:pr-8">
             <Link href="#hero" className="inline-block mb-6">
               <Image
-                src="/images/newlogo-white.png"
+                src="/images/logo-name-white.png"
                 alt="SmartCode Solutions"
                 width={120}
-                height={40}
-                className="h-10"
+                height={120}
               />
             </Link>
 
