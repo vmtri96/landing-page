@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const Header = () => {
   const menu = [
-    { name: "Trang chủ", link: "#", active: true },
-    { name: "Dịch vụ", link: "#" },
-    { name: "Tin tức", link: "#" },
-    { name: "Giới thiệu", link: "#" },
-    { name: "FAQs", link: "#" },
+    { name: "Trang chủ", link: "#hero", active: true },
+    { name: "Quy trình làm việc", link: "#working-process" },
+    { name: "Dịch vụ", link: "#services" },
+    { name: "Giới thiệu", link: "#client-pathway" },
+    // { name: "FAQs", link: "#" },
   ];
   const [open, setOpen] = useState(false);
 
@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="border-b border-gray-200 py-3 md:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <Link className="flex-shrink-0 mr-8" href="#">
+            <Link className="flex-shrink-0 mr-8" href="#hero">
               <Image
                 src="/images/newlogo.png"
                 alt="logo here"

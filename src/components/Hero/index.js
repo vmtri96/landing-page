@@ -16,7 +16,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="max-w-7xl min-h-[800px] mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200 mb-8">
+    <section
+      id="hero"
+      className="max-w-7xl min-h-[800px] mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-200 mb-8"
+    >
       <div className="min-h-[800px] flex flex-col lg:flex-row gap-8 lg:gap-12 py-12 lg:py-16 items-center">
         <div className="flex-1 text-center lg:text-left">
           <h1

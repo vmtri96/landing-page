@@ -119,7 +119,10 @@ const WorkingProcess = () => {
   );
 
   return (
-    <section className="bg-gray-900 py-16 lg:py-24 overflow-hidden relative">
+    <section
+      id="working-process"
+      className="bg-gray-900 py-16 lg:py-24 overflow-hidden relative"
+    >
       <div
         className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 w-[800px] h-[800px] bg-no-repeat"
         style={{
