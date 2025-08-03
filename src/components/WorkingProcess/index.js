@@ -107,14 +107,20 @@ const WorkingProcess = () => {
     { id: 6, name: "Bảo trì", icon: <MaintainIcon /> },
   ];
 
-  const Card = ({ step }) => (
-    <div className="bg-white rounded-lg p-3 w-56 flex items-center gap-4 shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1 transition-all duration-300">
-      <div className="bg-blue-100 text-blue-600 p-3 rounded-md">
-        {step.icon}
+  const Card = ({ step, isLast = false }) => (
+    <div className="flex flex-col items-center lg:block">
+      <div className="bg-white rounded-lg p-3 w-56 flex items-center gap-4 shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1 transition-all duration-300">
+        <div className="bg-blue-100 text-blue-600 p-3 rounded-md">
+          {step.icon}
+        </div>
+        <p className="text-gray-800 font-semibold text-sm leading-tight">
+          {step.name}
+        </p>
       </div>
-      <p className="text-gray-800 font-semibold text-sm leading-tight">
-        {step.name}
-      </p>
+      {/* Vertical connector line for mobile */}
+      {!isLast && (
+        <div className="lg:hidden w-0 h-8 border-l-2 border-dashed border-gray-600 my-4"></div>
+      )}
     </div>
   );
 
@@ -144,9 +150,21 @@ const WorkingProcess = () => {
             </div>
           </div>
 
-          <div className="lg:w-3/4 relative mt-12 lg:mt-0 flex flex-col justify-center min-h-[450px]">
+          {/* Mobile Layout - Single Column */}
+          <div className="lg:hidden w-full flex flex-col items-center z-10">
+            {processSteps.map((step, index) => (
+              <Card
+                key={step.id}
+                step={step}
+                isLast={index === processSteps.length - 1}
+              />
+            ))}
+          </div>
+
+          {/* Desktop Layout - Complex Grid */}
+          <div className="hidden lg:block lg:w-3/4 relative mt-12 lg:mt-0 flex-col justify-center min-h-[450px]">
             {/* Row 1 */}
-            <div className="flex justify-between w-full items-center z-[2]">
+            <div className="flex justify-between w-full items-center relative z-[2]">
               <Card step={processSteps[0]} />
               <div className="flex-grow h-0 border-t-2 border-dashed border-gray-600 mx-2"></div>
               <Card step={processSteps[1]} />
@@ -155,21 +173,21 @@ const WorkingProcess = () => {
             </div>
 
             {/* Row 2 */}
-            <div className="flex justify-center w-full my-16 items-center z-[2]">
+            <div className="flex justify-center w-full my-16 items-center relative z-[2]">
               <Card step={processSteps[3]} />
               <div className="w-24 h-0 border-t-2 border-dashed border-gray-600"></div>
               <Card step={processSteps[4]} />
             </div>
 
             {/* Row 3 */}
-            <div className="flex justify-center w-full z-[2]">
+            <div className="flex justify-center w-full relative z-[2]">
               <Card step={processSteps[5]} />
             </div>
 
             {/* Dotted Connection Lines */}
-            <div className="absolute inset-0 hidden lg:block">
-              <div className="absolute top-[90px] right-[-3rem] h-[138px] w-[13rem] border-b-2 border-r-2 border-t-2 border-dashed border-gray-600 rounded-br-3xl rounded-tr-3xl"></div>
-              <div className="absolute top-[225px] left-[6.5rem] h-[138px] w-[13rem] border-t-2 border-l-2 border-b-2 border-dashed border-gray-600 rounded-tl-3xl rounded-bl-3xl"></div>
+            <div className="absolute inset-0">
+              <div className="absolute top-[35px] right-[-3rem] h-[138px] w-[13rem] border-b-2 border-r-2 border-t-2 border-dashed border-gray-600 rounded-br-3xl rounded-tr-3xl"></div>
+              <div className="absolute top-[172px] left-[6.5rem] h-[138px] w-[13rem] border-t-2 border-l-2 border-b-2 border-dashed border-gray-600 rounded-tl-3xl rounded-bl-3xl"></div>
             </div>
           </div>
         </div>

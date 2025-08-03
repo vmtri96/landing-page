@@ -28,8 +28,8 @@ const Footer = () => {
               <Image
                 src="/images/logo-name-white.png"
                 alt="SmartCode Solutions"
-                width={120}
-                height={120}
+                width={140}
+                height={100}
               />
             </Link>
 
