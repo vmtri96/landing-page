@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   generateEtags: false,
   experimental: {
-    optimizeCss: true,
+    // Remove optimizeCss to fix critters error
+    // optimizeCss: true,
   },
   async headers() {
     return [

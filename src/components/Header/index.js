@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -8,13 +8,16 @@ import { usePathContext } from "@/contexts/PathContext";
 const Header = () => {
   const pathname = usePathname();
   const { pathActive, setPathActive } = usePathContext();
-  const menu = [
-    { name: "Trang chủ", link: "#hero" },
-    { name: "Quy trình làm việc", link: "#working-process" },
-    { name: "Dịch vụ", link: "#services" },
-    { name: "Giới thiệu", link: "#client-pathway" },
-    { name: "Về chúng tôi", link: "/about" },
-  ];
+  const menu = useMemo(
+    () => [
+      { name: "Trang chủ", link: "#hero" },
+      { name: "Quy trình làm việc", link: "#working-process" },
+      { name: "Dịch vụ", link: "#services" },
+      { name: "Giới thiệu", link: "#client-pathway" },
+      { name: "Về chúng tôi", link: "/about" },
+    ],
+    []
+  );
   const [open, setOpen] = useState(false);
 
   // Update active state when pathname changes
@@ -43,7 +46,7 @@ const Header = () => {
         setPathActive(anchor);
       }
     }
-  }, [pathname, setPathActive]);
+  }, [pathname, setPathActive, menu]);
 
   // Listen for hash changes when on home page
   useEffect(() => {
