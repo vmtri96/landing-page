@@ -1,13 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  FiHeadphones,
-  FiFacebook,
-  FiLinkedin,
-  FiInstagram,
-} from "react-icons/fi";
-import { FaTiktok } from "react-icons/fa";
+import { FiHeadphones } from "react-icons/fi";
+import { sendEmail } from "@/services/emailService";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,9 +27,7 @@ const Contact = () => {
     setSubmitError(false);
 
     try {
-      // Here you would typically send the form data to your backend
-      // For now, we'll just simulate a successful submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await sendEmail(formData);
       setSubmitSuccess(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
@@ -178,43 +171,58 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-1 mt-3">
-                  <p className="text-gray-700">0973 023 736</p>
+                  <p className="text-gray-700">0967 476 659</p>
                   <p className="text-gray-700">smartcodesolutions@gmail.com</p>
                 </div>
               </div>
 
-              {/* Divider */}
-              <div className="border-t border-gray-200 my-6"></div>
-
-              {/* Social Media */}
+              {/* Additional Contact Info */}
               <div>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
-                      <FiFacebook className="w-5 h-5" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
                     </div>
-                    <span className="text-gray-700">Facebook</span>
+                    <span className="text-gray-700">Cần Thơ, Việt Nam</span>
                   </div>
 
                   <div className="flex items-center">
                     <div className="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
-                      <FiLinkedin className="w-5 h-5" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
                     </div>
-                    <span className="text-gray-700">LinkedIn</span>
-                  </div>
-
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
-                      <FiInstagram className="w-5 h-5" />
-                    </div>
-                    <span className="text-gray-700">Instagram</span>
-                  </div>
-
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
-                      <FaTiktok className="w-5 h-5" />
-                    </div>
-                    <span className="text-gray-700">TikTok</span>
+                    <span className="text-gray-700">
+                      Giờ làm việc: 8:00 - 18:00
+                    </span>
                   </div>
                 </div>
               </div>

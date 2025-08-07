@@ -20,9 +20,9 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <Link className="flex-shrink-0 mr-8" href="#hero">
               <Image
-                src="/images/logo-name-blue-no-space.png"
+                src="/images/logo.png"
                 alt="logo here"
-                width={100}
+                width={40}
                 height={60}
                 className="h-8 md:h-10"
               />
@@ -81,7 +81,7 @@ const Header = () => {
                     >
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
-                    <span>0973 023 736</span>
+                    <span>0967 476 659</span>
                   </div>
                   <Link
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-blue-600 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"

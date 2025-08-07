@@ -7,14 +7,15 @@ const font = Montserrat({
 });
 
 export const metadata = {
-  title: "SmartCode Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+  title:
+    "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
   description:
-    "SmartCode Solutions cung cấp dịch vụ phát triển phần mềm chuyên nghiệp, giải pháp tùy chỉnh và dịch vụ chuyển đổi số. Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến của chúng tôi.",
+    "Smart Code Digital Solutions Co., Ltd. cung cấp dịch vụ phát triển phần mềm chuyên nghiệp, giải pháp tùy chỉnh và dịch vụ chuyển đổi số. Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến của chúng tôi.",
   keywords:
     "phát triển phần mềm, phần mềm tùy chỉnh, chuyển đổi số, phát triển web, ứng dụng di động, giải pháp CNTT",
-  authors: [{ name: "SmartCode Solutions" }],
-  creator: "SmartCode Solutions",
-  publisher: "SmartCode Solutions",
+  authors: [{ name: "Smart Code Digital Solutions Co., Ltd." }],
+  creator: "Smart Code Digital Solutions Co., Ltd.",
+  publisher: "Smart Code Digital Solutions Co., Ltd.",
   formatDetection: {
     email: false,
     address: false,
@@ -25,17 +26,18 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "SmartCode Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+    title:
+      "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
       "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp của chúng tôi.",
     url: "https://smartcodesolutions.vn",
-    siteName: "SmartCode Solutions",
+    siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
       {
         url: "/images/logo-name-blue.png",
         width: 1200,
         height: 630,
-        alt: "SmartCode Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+        alt: "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
       },
     ],
     locale: "vi_VN",
@@ -43,7 +45,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SmartCode Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+    title:
+      "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
       "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp của chúng tôi.",
     images: ["/images/logo-name-blue.png"],
