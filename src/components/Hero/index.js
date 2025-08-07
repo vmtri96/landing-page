@@ -27,18 +27,17 @@ const Hero = () => {
               isVisible ? "opacity-100" : "opacity-0"
             }`}
           >
-            Giải pháp công nghệ thông minh - Smart Code Digital Solutions Co.,
-            Ltd.
+            Công Ty Phát Triển Phần Mềm & Thiết Kế Website Chuyên Nghiệp
           </h1>
           <p
             className={`text-lg text-gray-600 mb-8 max-w-2xl transition-opacity duration-1000 ease-in-out delay-300 ${
               isVisible ? "opacity-100" : "opacity-0"
             }`}
           >
-            Smart Code Digital Solutions Co., Ltd. mang đến giải pháp thiết kế
-            website, ứng dụng và phần mềm chuyên nghiệp, tối ưu SEO và trải
-            nghiệm người dùng. Hãy bắt đầu hành trình số hóa doanh nghiệp của
-            bạn!
+            Smart Code Digital Solutions - Đơn vị hàng đầu trong lĩnh vực phát
+            triển phần mềm, thiết kế website và ứng dụng di động. Chúng tôi cung
+            cấp giải pháp công nghệ tối ưu, tối ưu SEO và trải nghiệm người dùng
+            xuất sắc. Hãy bắt đầu hành trình chuyển đổi số doanh nghiệp của bạn!
           </p>
           <Link
             className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 ${

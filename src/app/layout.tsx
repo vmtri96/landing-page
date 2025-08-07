@@ -1,5 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import SchemaMarkup from "@/components/SchemaMarkup";
+import { PathProvider } from "@/contexts/PathContext";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -8,11 +10,11 @@ const font = Montserrat({
 
 export const metadata = {
   title:
-    "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+    "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm, Website & Ứng Dụng Di Động Chuyên Nghiệp",
   description:
-    "Smart Code Digital Solutions Co., Ltd. cung cấp dịch vụ phát triển phần mềm chuyên nghiệp, giải pháp tùy chỉnh và dịch vụ chuyển đổi số. Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến của chúng tôi.",
+    "Smart Code Digital Solutions cung cấp dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động và chuyển đổi số chuyên nghiệp. Giải pháp công nghệ tối ưu cho doanh nghiệp với giá cả hợp lý, chất lượng cao.",
   keywords:
-    "phát triển phần mềm, phần mềm tùy chỉnh, chuyển đổi số, phát triển web, ứng dụng di động, giải pháp CNTT",
+    "phát triển phần mềm, thiết kế website, ứng dụng di động, chuyển đổi số, phát triển web, app mobile, giải pháp CNTT, công ty phần mềm, dịch vụ IT, lập trình viên, thiết kế giao diện, SEO website, bảo trì phần mềm",
   authors: [{ name: "Smart Code Digital Solutions Co., Ltd." }],
   creator: "Smart Code Digital Solutions Co., Ltd.",
   publisher: "Smart Code Digital Solutions Co., Ltd.",
@@ -27,9 +29,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+      "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm & Website Chuyên Nghiệp",
     description:
-      "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp của chúng tôi.",
+      "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp. Thiết kế website, ứng dụng di động, bảo trì phần mềm.",
     url: "https://smartcodesolutions.vn",
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
@@ -37,7 +39,7 @@ export const metadata = {
         url: "/images/logo-name-blue.png",
         width: 1200,
         height: 630,
-        alt: "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+        alt: "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
       },
     ],
     locale: "vi_VN",
@@ -46,9 +48,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Smart Code Digital Solutions Co., Ltd. - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
+      "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm & Website Chuyên Nghiệp",
     description:
-      "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp của chúng tôi.",
+      "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp.",
     images: ["/images/logo-name-blue.png"],
   },
   robots: {
@@ -62,6 +64,9 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "your-google-verification-code",
+  },
 };
 
 export default function RootLayout({
@@ -70,8 +75,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${font.className}`}>{children}</body>
+    <html lang="vi">
+      <head>
+        <SchemaMarkup />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#2563eb" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Smart Code Digital Solutions"
+        />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+      </head>
+      <body className={`${font.className}`}>
+        <PathProvider>{children}</PathProvider>
+      </body>
     </html>
   );
 }

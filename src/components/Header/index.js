@@ -1,27 +1,105 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { usePathContext } from "@/contexts/PathContext";
 
 const Header = () => {
+  const pathname = usePathname();
+  const { pathActive, setPathActive } = usePathContext();
   const menu = [
-    { name: "Trang chủ", link: "#hero", active: true },
+    { name: "Trang chủ", link: "#hero" },
     { name: "Quy trình làm việc", link: "#working-process" },
     { name: "Dịch vụ", link: "#services" },
     { name: "Giới thiệu", link: "#client-pathway" },
-    // { name: "FAQs", link: "#" },
+    { name: "Về chúng tôi", link: "/about" },
   ];
   const [open, setOpen] = useState(false);
+
+  // Update active state when pathname changes
+  useEffect(() => {
+    console.log("Pathname changed:", pathname); // Debug log
+
+    // Find which menu item should be active based on current pathname
+    const activeItem = menu.find((item) => {
+      if (item.link.startsWith("/")) {
+        return pathname === item.link;
+      } else if (item.link.startsWith("#")) {
+        // Check if pathname includes the anchor (for cases like /#hero, /#services)
+        return pathname === "/" || pathname.includes(item.link);
+      }
+      return false;
+    });
+
+    if (activeItem) {
+      console.log("Setting active item:", activeItem.link); // Debug log
+      setPathActive(activeItem.link);
+    } else {
+      // If no exact match found, check if we're on home page with anchor
+      if (pathname.startsWith("/#")) {
+        const anchor = pathname.substring(1); // Remove leading /
+        console.log("Found anchor in pathname:", anchor); // Debug log
+        setPathActive(anchor);
+      }
+    }
+  }, [pathname, setPathActive]);
+
+  // Listen for hash changes when on home page
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (pathname === "/" && window.location.hash) {
+        console.log("Hash changed:", window.location.hash); // Debug log
+        setPathActive(window.location.hash);
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [pathname, setPathActive]);
+
+  // Helper function to check if menu item is active
+  const isMenuActive = (item) => {
+    if (item.link.startsWith("/")) {
+      return pathname === item.link;
+    } else if (item.link.startsWith("#")) {
+      // Check if we're on home page and pathActive matches, or if pathname includes the anchor
+      return (
+        (pathname === "/" && pathActive === item.link) ||
+        (pathname !== "/" && pathname.includes(item.link))
+      );
+    }
+    return false;
+  };
 
   return (
     <header className="w-full sticky top-0 bg-white z-50">
       <nav className="border-b border-gray-200 py-3 md:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <Link className="flex-shrink-0 mr-8" href="#hero">
+            <Link
+              className="flex-shrink-0 mr-8"
+              href={pathname !== "/" ? "/#hero" : "#hero"}
+              onClick={(e) => {
+                e.preventDefault();
+
+                // If not on home page, navigate to home first
+                if (pathname !== "/") {
+                  window.location.href = "/#hero";
+                  return;
+                }
+
+                // If on home page, smooth scroll
+                const element = document.querySelector("#hero");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+                setPathActive("#hero");
+              }}
+            >
               <Image
                 src="/images/logo.png"
-                alt="logo here"
+                alt="Smart Code Digital Solutions"
                 width={40}
                 height={60}
                 className="h-8 md:h-10"
@@ -60,11 +138,37 @@ const Header = () => {
                     <li key={index}>
                       <Link
                         className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                          item.active
+                          isMenuActive(item)
                             ? "text-blue-600 bg-blue-50"
                             : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
                         }`}
-                        href={item.link}
+                        href={
+                          item.link.startsWith("/")
+                            ? item.link
+                            : pathname !== "/"
+                            ? `/${item.link}`
+                            : item.link
+                        }
+                        onClick={(e) => {
+                          // Handle anchor links
+                          if (item.link.startsWith("#")) {
+                            e.preventDefault();
+
+                            // If not on home page, navigate to home first
+                            if (pathname !== "/") {
+                              window.location.href = `/${item.link}`;
+                              return;
+                            }
+
+                            // If on home page, smooth scroll
+                            const element = document.querySelector(item.link);
+                            if (element) {
+                              element.scrollIntoView({ behavior: "smooth" });
+                            }
+                          }
+                          setPathActive(item.link);
+                          setOpen(false); // Close mobile menu
+                        }}
                       >
                         {item.name}
                       </Link>
