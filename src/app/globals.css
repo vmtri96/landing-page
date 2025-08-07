@@ -16,6 +16,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #1c426b;
+  --primary-light: #2a5a8a;
+  --primary-dark: #153555;
   --red-300: oklch(80.8% 0.114 19.571);
   --red-500: oklch(0.637 0.237 25.331);
   --red-600: oklch(0.577 0.245 27.325);

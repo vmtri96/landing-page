@@ -40,7 +40,7 @@ const Hero = () => {
             xuất sắc. Hãy bắt đầu hành trình chuyển đổi số doanh nghiệp của bạn!
           </p>
           <Link
-            className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 ${
+            className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#1C426B] hover:bg-[#153555] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C426B] transition-all duration-300 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"

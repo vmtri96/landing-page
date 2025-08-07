@@ -133,7 +133,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#1C426B] hover:bg-[#153555] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C426B] transition-colors duration-200"
                   >
                     {isSubmitting ? "Đang gửi..." : "Gửi tin nhắn"}
                   </button>

@@ -81,7 +81,7 @@ const ServicesOverview = () => {
         <div className="mt-12 text-center">
           <Link
             href="#contact"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-[#1C426B] hover:bg-[#153555] transition-colors duration-300"
           >
             Liên hệ tư vấn
           </Link>

@@ -75,7 +75,7 @@ const Footer = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-white hover:text-blue-600 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-6 py-3 bg-[#1C426B] text-white font-medium rounded-md hover:bg-white hover:text-[#1C426B] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Đang gửi..." : "Get Started"}
               </button>

@@ -53,7 +53,7 @@ const ClientPathway = () => {
 
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center">
+                  <div className="w-6 h-6 bg-[#1C426B] rounded-full mr-3 flex items-center justify-center">
                     <CheckIcon />
                   </div>
                   <p className="text-gray-700 font-medium">
@@ -61,7 +61,7 @@ const ClientPathway = () => {
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center">
+                  <div className="w-6 h-6 bg-[#1C426B] rounded-full mr-3 flex items-center justify-center">
                     <CheckIcon />
                   </div>
                   <p className="text-gray-700 font-medium">
@@ -69,7 +69,7 @@ const ClientPathway = () => {
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-6 h-6 bg-blue-600 rounded-full mr-3 flex items-center justify-center">
+                  <div className="w-6 h-6 bg-[#1C426B] rounded-full mr-3 flex items-center justify-center">
                     <CheckIcon />
                   </div>
                   <p className="text-gray-700 font-medium">Hỗ trợ liên tục</p>
@@ -90,7 +90,7 @@ const ClientPathway = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center justify-center">
                   <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center z-10">
-                    <span className="text-blue-600 font-bold">
+                    <span className="text-[#1C426B] font-bold">
                       {pathwaySteps[0].id}
                     </span>
                   </div>
@@ -117,7 +117,7 @@ const ClientPathway = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center justify-center">
                   <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center z-10">
-                    <span className="text-blue-600 font-bold">
+                    <span className="text-[#1C426B] font-bold">
                       {pathwaySteps[1].id}
                     </span>
                   </div>
@@ -144,7 +144,7 @@ const ClientPathway = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center justify-center">
                   <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center z-10">
-                    <span className="text-blue-600 font-bold">
+                    <span className="text-[#1C426B] font-bold">
                       {pathwaySteps[2].id}
                     </span>
                   </div>

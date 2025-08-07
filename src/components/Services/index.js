@@ -119,7 +119,7 @@ const Services = () => {
                 <div className="flex justify-end mb-6">
                   <Link
                     href="#contact"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-full text-white bg-blue-600 hover:bg-gray-800 transition-colors duration-200"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-full text-white bg-[#1C426B] hover:bg-[#153555] transition-colors duration-200"
                   >
                     Liên hệ
                   </Link>

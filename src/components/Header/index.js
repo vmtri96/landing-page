@@ -142,8 +142,8 @@ const Header = () => {
                       <Link
                         className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                           isMenuActive(item)
-                            ? "text-blue-600 bg-blue-50"
-                            : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                            ? "text-[#1C426B] bg-[#1C426B]/10"
+                            : "text-gray-700 hover:text-[#1C426B] hover:bg-gray-50"
                         }`}
                         href={
                           item.link.startsWith("/")
@@ -191,7 +191,7 @@ const Header = () => {
                     <span>0967 476 659</span>
                   </div>
                   <Link
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-blue-600 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-[#1C426B] hover:bg-[#153555] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C426B] transition-colors duration-200"
                     href="#contact"
                   >
                     Liên hệ
