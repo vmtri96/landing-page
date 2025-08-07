@@ -10,7 +10,8 @@ const SchemaMarkup = () => {
     address: {
       "@type": "PostalAddress",
       addressCountry: "VN",
-      addressLocality: "Việt Nam",
+      addressLocality:
+        "Cạnh 29E1, Đường F5, Khu Dân Cư 3A, Phường An Bình, Thành phố Cần Thơ",
     },
     contactPoint: {
       "@type": "ContactPoint",
