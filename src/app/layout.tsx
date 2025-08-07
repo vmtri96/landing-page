@@ -36,9 +36,9 @@ export const metadata = {
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
       {
-        url: "/images/logo-name-blue.png",
-        width: 1200,
-        height: 630,
+        url: "/images/logo-name.png",
+        width: 1024,
+        height: 1024,
         alt: "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
       },
     ],
@@ -51,7 +51,7 @@ export const metadata = {
       "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm & Website Chuyên Nghiệp",
     description:
       "Chuyển đổi doanh nghiệp của bạn với các giải pháp công nghệ tiên tiến và dịch vụ phát triển phần mềm chuyên nghiệp.",
-    images: ["/images/logo-name-blue.png"],
+    images: ["/images/logo-name.png"],
   },
   robots: {
     index: true,
@@ -65,7 +65,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "3aEoKlZSWHkTDDXJ1ceYWtb3ttOdihPpLmA7bCsciJM",
   },
 };
 
