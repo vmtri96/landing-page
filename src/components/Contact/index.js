@@ -172,7 +172,9 @@ const Contact = () => {
 
                 <div className="space-y-1 mt-3">
                   <p className="text-gray-700">0967 476 659</p>
-                  <p className="text-gray-700">smartcodesolutions@gmail.com</p>
+                  <p className="text-gray-700">
+                    smartcodesolutions.vn@gmail.com
+                  </p>
                 </div>
               </div>
 

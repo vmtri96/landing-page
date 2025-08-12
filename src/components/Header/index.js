@@ -10,10 +10,10 @@ const Header = () => {
   const { pathActive, setPathActive } = usePathContext();
   const menu = useMemo(
     () => [
-      { name: "Trang chủ", link: "#hero" },
-      { name: "Quy trình làm việc", link: "#working-process" },
-      { name: "Dịch vụ", link: "#services" },
-      { name: "Giới thiệu", link: "#client-pathway" },
+      { name: "Trang chủ", link: "/" },
+      { name: "Quy trình làm việc", link: "/working-process" },
+      { name: "Dịch vụ", link: "/services" },
+      { name: "Giới thiệu", link: "/client-pathway" },
       { name: "Về chúng tôi", link: "/about" },
     ],
     []
@@ -25,26 +25,11 @@ const Header = () => {
     console.log("Pathname changed:", pathname); // Debug log
 
     // Find which menu item should be active based on current pathname
-    const activeItem = menu.find((item) => {
-      if (item.link.startsWith("/")) {
-        return pathname === item.link;
-      } else if (item.link.startsWith("#")) {
-        // Check if pathname includes the anchor (for cases like /#hero, /#services)
-        return pathname === "/" || pathname.includes(item.link);
-      }
-      return false;
-    });
+    const activeItem = menu.find((item) => pathname === item.link);
 
     if (activeItem) {
       console.log("Setting active item:", activeItem.link); // Debug log
       setPathActive(activeItem.link);
-    } else {
-      // If no exact match found, check if we're on home page with anchor
-      if (pathname.startsWith("/#")) {
-        const anchor = pathname.substring(1); // Remove leading /
-        console.log("Found anchor in pathname:", anchor); // Debug log
-        setPathActive(anchor);
-      }
     }
   }, [pathname, setPathActive, menu]);
 
@@ -62,44 +47,14 @@ const Header = () => {
   }, [pathname, setPathActive]);
 
   // Helper function to check if menu item is active
-  const isMenuActive = (item) => {
-    if (item.link.startsWith("/")) {
-      return pathname === item.link;
-    } else if (item.link.startsWith("#")) {
-      // Check if we're on home page and pathActive matches, or if pathname includes the anchor
-      return (
-        (pathname === "/" && pathActive === item.link) ||
-        (pathname !== "/" && pathname.includes(item.link))
-      );
-    }
-    return false;
-  };
+  const isMenuActive = (item) => pathname === item.link;
 
   return (
     <header className="w-full sticky top-0 bg-white z-50">
       <nav className="border-b border-gray-200 py-3 md:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <Link
-              className="flex-shrink-0 mr-8"
-              href={pathname !== "/" ? "/#hero" : "#hero"}
-              onClick={(e) => {
-                e.preventDefault();
-
-                // If not on home page, navigate to home first
-                if (pathname !== "/") {
-                  window.location.href = "/#hero";
-                  return;
-                }
-
-                // If on home page, smooth scroll
-                const element = document.querySelector("#hero");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-                setPathActive("#hero");
-              }}
-            >
+            <Link className="flex-shrink-0 mr-8" href="/">
               <Image
                 src="/images/logo.png"
                 alt="Smart Code Digital Solutions"
@@ -145,30 +100,8 @@ const Header = () => {
                             ? "text-[#1C426B] bg-[#1C426B]/10"
                             : "text-gray-700 hover:text-[#1C426B] hover:bg-gray-50"
                         }`}
-                        href={
-                          item.link.startsWith("/")
-                            ? item.link
-                            : pathname !== "/"
-                            ? `/${item.link}`
-                            : item.link
-                        }
+                        href={item.link}
                         onClick={(e) => {
-                          // Handle anchor links
-                          if (item.link.startsWith("#")) {
-                            e.preventDefault();
-
-                            // If not on home page, navigate to home first
-                            if (pathname !== "/") {
-                              window.location.href = `/${item.link}`;
-                              return;
-                            }
-
-                            // If on home page, smooth scroll
-                            const element = document.querySelector(item.link);
-                            if (element) {
-                              element.scrollIntoView({ behavior: "smooth" });
-                            }
-                          }
                           setPathActive(item.link);
                           setOpen(false); // Close mobile menu
                         }}
@@ -192,7 +125,7 @@ const Header = () => {
                   </div>
                   <Link
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-[#1C426B] hover:bg-[#153555] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C426B] transition-colors duration-200"
-                    href="#contact"
+                    href="/contact"
                   >
                     Liên hệ
                   </Link>

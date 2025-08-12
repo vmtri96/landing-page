@@ -104,7 +104,9 @@ const Footer = () => {
               <p className="text-gray-400 mb-6">0967 476 659</p>
 
               <h3 className="text-white text-lg font-semibold mb-4">Email</h3>
-              <p className="text-gray-400 mb-6">smartcodesolutions@gmail.com</p>
+              <p className="text-gray-400 mb-6">
+                smartcodesolutions.vn@gmail.com
+              </p>
 
               <h3 className="text-white text-lg font-semibold mb-4">
                 Mã số thuế

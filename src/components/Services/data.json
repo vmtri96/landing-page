@@ -11,13 +11,7 @@
           { "title": "Tương thích hiển thị trên máy tính", "check": true },
           { "title": "Tối ưu link SEO cơ bản", "check": true },
           { "title": "Form liên hệ + đăng ký nhận tin", "check": true },
-          { "title": "Khai báo sơ đồ web với Google", "check": true },
-          { "title": "Giao diện mobile/responsive", "check": false },
-          { "title": "Popup quảng cáo", "check": false },
-          { "title": "Đóng dấu bản quyền hình ảnh", "check": false },
-          { "title": "Nút gọi điện / chat Zalo / Messenger", "check": false },
-          { "title": "Google dịch (đa ngôn ngữ cơ bản)", "check": false },
-          { "title": "Tag từ khóa cho bài viết", "check": false }
+          { "title": "Khai báo sơ đồ web với Google", "check": true }
         ]
       },
       {
@@ -90,10 +84,7 @@
           { "title": "Thiết kế theo mẫu có sẵn", "check": true },
           { "title": "Giao diện tương thích Android", "check": true },
           { "title": "Form đăng ký, đăng nhập", "check": true },
-          { "title": "Tối ưu hiệu năng cơ bản", "check": true },
-          { "title": "Tự động gửi thông báo (basic)", "check": false },
-          { "title": "Phiên bản iOS", "check": false },
-          { "title": "Tùy chỉnh giao diện mobile nâng cao", "check": false }
+          { "title": "Tối ưu hiệu năng cơ bản", "check": true }
         ]
       },
       {
@@ -149,9 +140,7 @@
           { "title": "Chức năng nhập – xuất dữ liệu cơ bản", "check": true },
           { "title": "Tạo tài khoản và đăng nhập", "check": true },
           { "title": "Cài đặt offline hoặc cục bộ", "check": true },
-          { "title": "Chạy được trên Windows", "check": true },
-          { "title": "Không có kết nối Internet/Cloud", "check": false },
-          { "title": "Không phân quyền người dùng", "check": false }
+          { "title": "Chạy được trên Windows", "check": true }
         ]
       },
       {
@@ -197,8 +186,7 @@
           { "title": "Sao lưu dữ liệu định kỳ", "check": true },
           { "title": "Sửa lỗi cơ bản phát sinh", "check": true },
           { "title": "Tư vấn kỹ thuật cơ bản", "check": true },
-          { "title": "Hỗ trợ qua email", "check": true },
-          { "title": "Không hỗ trợ 24/7", "check": false }
+          { "title": "Hỗ trợ qua email", "check": true }
         ]
       },
       {

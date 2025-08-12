@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import servicesData from "./data.json";
 import { FiPackage, FiBox, FiLayers, FiStar } from "react-icons/fi";
 
-const Services = () => {
+const Services = ({ onTabChange }) => {
   const [activeTab, setActiveTab] = useState(0);
   const [visibleCards, setVisibleCards] = useState([]);
   const cardsRef = useRef([]);
@@ -86,7 +86,12 @@ const Services = () => {
             {servicesData.map((service, index) => (
               <button
                 key={index}
-                onClick={() => setActiveTab(index)}
+                onClick={() => {
+                  setActiveTab(index);
+                  if (typeof onTabChange === "function") {
+                    onTabChange(index);
+                  }
+                }}
                 className={`py-3 px-4 rounded-lg text-sm font-medium transition-all duration-200 cursor-pointer ${
                   activeTab === index
                     ? "bg-gray-900 text-white"
