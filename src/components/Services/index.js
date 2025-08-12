@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import servicesData from "./data.json";
 import { FiPackage, FiBox, FiLayers, FiStar } from "react-icons/fi";
 
-const Services = ({ onTabChange }) => {
+const Services = ({ onTabChange } = {}) => {
   const [activeTab, setActiveTab] = useState(0);
   const [visibleCards, setVisibleCards] = useState([]);
   const cardsRef = useRef([]);

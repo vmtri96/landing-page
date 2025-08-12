@@ -7,7 +7,7 @@ import { usePathContext } from "@/contexts/PathContext";
 
 const Header = () => {
   const pathname = usePathname();
-  const { pathActive, setPathActive } = usePathContext();
+  const { setPathActive } = usePathContext();
   const menu = useMemo(
     () => [
       { name: "Trang chủ", link: "/" },
@@ -54,7 +54,11 @@ const Header = () => {
       <nav className="border-b border-gray-200 py-3 md:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <Link className="flex-shrink-0 mr-8" href="/">
+            <Link
+              className="flex-shrink-0 mr-8"
+              href="/"
+              onClick={() => setPathActive("/")}
+            >
               <Image
                 src="/images/logo.png"
                 alt="Smart Code Digital Solutions"
@@ -101,7 +105,7 @@ const Header = () => {
                             : "text-gray-700 hover:text-[#1C426B] hover:bg-gray-50"
                         }`}
                         href={item.link}
-                        onClick={(e) => {
+                        onClick={() => {
                           setPathActive(item.link);
                           setOpen(false); // Close mobile menu
                         }}
