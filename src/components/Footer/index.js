@@ -133,6 +133,22 @@ const Footer = () => {
             </p>
           </div>
 
+          <div className="flex items-center gap-4 mb-6 md:mb-0">
+            <Link
+              href="/privacy-policy"
+              className="text-gray-400 text-sm hover:text-white transition-colors"
+            >
+              Chính sách bảo mật
+            </Link>
+            <span className="text-gray-600">|</span>
+            <Link
+              href="/terms-of-service"
+              className="text-gray-400 text-sm hover:text-white transition-colors"
+            >
+              Điều khoản dịch vụ
+            </Link>
+          </div>
+
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Smart Code Digital Solutions Co., Ltd..
             All rights reserved.

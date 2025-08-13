@@ -26,9 +26,6 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "3aEoKlZSWHkTDDXJ1ceYWtb3ttOdihPpLmA7bCsciJM",
-  },
   openGraph: {
     title: "Lộ Trình Khách Hàng - Smart Code Digital Solutions",
     description:

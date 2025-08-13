@@ -1,15 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-  title:
-    "Về Chúng Tôi - Smart Code Digital Solutions | Công Ty Phát Triển Phần Mềm",
-  description:
-    "Smart Code Digital Solutions - Công ty phát triển phần mềm, thiết kế website và ứng dụng di động chuyên nghiệp tại Việt Nam. Đội ngũ lập trình viên giàu kinh nghiệm, cam kết chất lượng.",
-  keywords:
-    "về chúng tôi, công ty phần mềm, đội ngũ lập trình viên, kinh nghiệm phát triển phần mềm, công ty IT Việt Nam",
-};
-
 export default function AboutPage() {
   return (
     <div>
