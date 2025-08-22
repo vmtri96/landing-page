@@ -3,11 +3,11 @@ import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title:
-    "Liên Hệ - Smart Code Digital Solutions | Tư Vấn & Báo Giá Dịch Vụ Phát Triển Phần Mềm",
+    "Liên Hệ - Smart Code Digital Solutions Cần Thơ | Tư Vấn & Báo Giá Dịch Vụ Phát Triển Phần Mềm",
   description:
-    "Liên hệ Smart Code Digital Solutions để được tư vấn và báo giá dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động. Hỗ trợ 24/7, phản hồi nhanh chóng.",
+    "Liên hệ Smart Code Digital Solutions Cần Thơ để được tư vấn và báo giá dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động. Hỗ trợ 24/7, phản hồi nhanh chóng.",
   keywords:
-    "liên hệ smart code, tư vấn phát triển phần mềm, báo giá website, báo giá app mobile, hỗ trợ khách hàng, tư vấn chuyển đổi số, địa chỉ công ty phần mềm",
+    "liên hệ smart code Cần Thơ, tư vấn phát triển phần mềm Cần Thơ, báo giá website Cần Thơ, báo giá app mobile Cần Thơ, hỗ trợ khách hàng Cần Thơ, tư vấn chuyển đổi số Cần Thơ, địa chỉ công ty phần mềm Cần Thơ",
   alternates: {
     canonical: "/contact",
   },

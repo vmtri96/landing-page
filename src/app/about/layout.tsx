@@ -2,11 +2,11 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Về Chúng Tôi - Smart Code Digital Solutions | Công Ty Phát Triển Phần Mềm Hàng Đầu",
+    "Về Chúng Tôi - Smart Code Digital Solutions Cần Thơ | Công Ty Phát Triển Phần Mềm Hàng Đầu",
   description:
-    "Tìm hiểu về Smart Code Digital Solutions - Công ty phát triển phần mềm hàng đầu với 5+ năm kinh nghiệm, 100+ dự án thành công. Đội ngũ lập trình viên giàu kinh nghiệm, công nghệ hiện đại.",
+    "Tìm hiểu về Smart Code Digital Solutions Cần Thơ - Công ty phát triển phần mềm hàng đầu tại Cần Thơ với 5+ năm kinh nghiệm, 100+ dự án thành công. Đội ngũ lập trình viên giàu kinh nghiệm, công nghệ hiện đại.",
   keywords:
-    "về smart code, công ty phần mềm, đội ngũ lập trình viên, kinh nghiệm phát triển, dự án thành công, công nghệ hiện đại, dịch vụ IT chuyên nghiệp",
+    "về smart code Cần Thơ, công ty phần mềm Cần Thơ, đội ngũ lập trình viên Cần Thơ, kinh nghiệm phát triển Cần Thơ, dự án thành công Cần Thơ, công nghệ hiện đại Cần Thơ, dịch vụ IT chuyên nghiệp Cần Thơ",
   alternates: {
     canonical: "/about",
   },

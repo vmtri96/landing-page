@@ -3,11 +3,11 @@ import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title:
-    "Dịch Vụ Phát Triển Phần Mềm - Smart Code Digital Solutions | Website, App Mobile, Chuyển Đổi Số",
+    "Dịch Vụ Phát Triển Phần Mềm Cần Thơ - Smart Code Digital Solutions | Website, App Mobile, Chuyển Đổi Số",
   description:
-    "Smart Code Digital Solutions cung cấp đầy đủ dịch vụ phát triển phần mềm: thiết kế website, ứng dụng di động, hệ thống quản lý, chuyển đổi số. Giải pháp tùy chỉnh theo nhu cầu doanh nghiệp.",
+    "Smart Code Digital Solutions Cần Thơ cung cấp đầy đủ dịch vụ phát triển phần mềm: thiết kế website, ứng dụng di động, hệ thống quản lý, chuyển đổi số. Giải pháp CNTT tùy chỉnh theo nhu cầu doanh nghiệp tại Cần Thơ.",
   keywords:
-    "dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động, hệ thống quản lý, chuyển đổi số, phát triển web, app mobile, phần mềm doanh nghiệp, giải pháp CNTT",
+    "dịch vụ phát triển phần mềm Cần Thơ, thiết kế website Cần Thơ, ứng dụng di động Cần Thơ, hệ thống quản lý Cần Thơ, chuyển đổi số Cần Thơ, phát triển web Cần Thơ, app mobile Cần Thơ, phần mềm doanh nghiệp Cần Thơ, giải pháp CNTT Cần Thơ",
   alternates: {
     canonical: "/services",
   },

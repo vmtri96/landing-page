@@ -9,12 +9,13 @@ const StructuredData = ({ type, data = {} }) => {
           url: "https://smartcodesolutions.vn",
           logo: "https://smartcodesolutions.vn/images/logo-name.png",
           description:
-            "Công ty phát triển phần mềm, thiết kế website, ứng dụng di động và chuyển đổi số chuyên nghiệp tại Việt Nam",
+            "Công ty phát triển phần mềm, thiết kế website, ứng dụng di động và chuyển đổi số chuyên nghiệp tại Cần Thơ, Việt Nam",
           foundingDate: "2019",
           address: {
             "@type": "PostalAddress",
             addressCountry: "VN",
-            addressLocality: "Việt Nam",
+            addressLocality: "Cần Thơ",
+            addressRegion: "Cần Thơ",
           },
           contactPoint: {
             "@type": "ContactPoint",
@@ -34,19 +35,20 @@ const StructuredData = ({ type, data = {} }) => {
           "@type": "LocalBusiness",
           name: "Smart Code Digital Solutions Co., Ltd.",
           description:
-            "Dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động chuyên nghiệp",
+            "Dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động chuyên nghiệp tại Cần Thơ",
           url: "https://smartcodesolutions.vn",
           telephone: "+84-967-476-659",
           email: "smartcodesolutions.vn@gmail.com",
           address: {
             "@type": "PostalAddress",
             addressCountry: "VN",
-            addressLocality: "Việt Nam",
+            addressLocality: "Cần Thơ",
+            addressRegion: "Cần Thơ",
           },
           geo: {
             "@type": "GeoCoordinates",
-            latitude: "10.8231",
-            longitude: "106.6297",
+            latitude: "10.0452",
+            longitude: "105.7469",
           },
           openingHours: "Mo-Fr 08:00-18:00",
           priceRange: "$$",
