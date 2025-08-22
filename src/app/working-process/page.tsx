@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WorkingProcess from "@/components/WorkingProcess";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function WorkingProcessPage() {
   return (
     <div>
       <Header />
+      <Breadcrumb />
       <main>
         <WorkingProcess />
 

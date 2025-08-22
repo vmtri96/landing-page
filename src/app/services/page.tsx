@@ -2,8 +2,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Services from "@/components/Services";
+import FAQ from "@/components/FAQ";
+import StructuredData from "@/components/StructuredData";
 import servicesData from "@/components/Services/data.json";
 import { useMemo, useState } from "react";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function ServicesPage() {
   const [activeServiceIndex, setActiveServiceIndex] = useState(0);
@@ -20,9 +23,39 @@ export default function ServicesPage() {
     );
   }, [activeService]);
 
+  const faqData = [
+    {
+      question: "Thời gian phát triển một website/ứng dụng mất bao lâu?",
+      answer:
+        "Thời gian phát triển phụ thuộc vào độ phức tạp của dự án. Website đơn giản: 2-4 tuần, website phức tạp: 1-3 tháng, ứng dụng di động: 2-6 tháng. Chúng tôi sẽ cung cấp timeline chi tiết trong báo giá.",
+    },
+    {
+      question: "Chi phí phát triển phần mềm là bao nhiêu?",
+      answer:
+        "Chi phí phụ thuộc vào yêu cầu cụ thể của dự án. Chúng tôi cung cấp báo giá miễn phí và minh bạch sau khi phân tích yêu cầu. Có các gói dịch vụ từ cơ bản đến cao cấp phù hợp với mọi ngân sách.",
+    },
+    {
+      question: "Có bảo hành và hỗ trợ sau khi bàn giao không?",
+      answer:
+        "Có, chúng tôi cung cấp bảo hành 12 tháng và hỗ trợ kỹ thuật trong giờ làm việc. Có thể cung cấp gói SLA 24/7 theo yêu cầu. Chúng tôi cam kết đồng hành dài hạn với khách hàng.",
+    },
+    {
+      question: "Có thể tùy chỉnh theo yêu cầu riêng không?",
+      answer:
+        "Hoàn toàn có thể! Chúng tôi chuyên về phát triển tùy chỉnh theo yêu cầu cụ thể của từng doanh nghiệp. Mỗi dự án đều được thiết kế và phát triển độc đáo, phù hợp với quy trình nghiệp vụ của khách hàng.",
+    },
+    {
+      question: "Có cung cấp dịch vụ bảo trì và nâng cấp không?",
+      answer:
+        "Có, chúng tôi cung cấp đầy đủ dịch vụ bảo trì, cập nhật và nâng cấp hệ thống. Bao gồm: bảo trì định kỳ, cập nhật bảo mật, thêm tính năng mới, tối ưu hiệu năng và hỗ trợ kỹ thuật.",
+    },
+  ];
+
   return (
     <div>
+      <StructuredData type="faq" data={{ faqs: faqData }} />
       <Header />
+      <Breadcrumb />
       <main>
         <Services onTabChange={setActiveServiceIndex} />
 
@@ -103,6 +136,8 @@ export default function ServicesPage() {
             )}
           </div>
         </section>
+
+        <FAQ title="Câu Hỏi Thường Gặp Về Dịch Vụ" faqs={faqData} />
       </main>
       <Footer />
     </div>

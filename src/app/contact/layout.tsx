@@ -1,43 +1,29 @@
-export const metadata = {
-  title: "Liên Hệ - Smart Code Digital Solutions",
+import { Metadata } from "next";
+import StructuredData from "@/components/StructuredData";
+
+export const metadata: Metadata = {
+  title:
+    "Liên Hệ - Smart Code Digital Solutions | Tư Vấn & Báo Giá Dịch Vụ Phát Triển Phần Mềm",
   description:
-    "Liên hệ Smart Code Digital Solutions để được tư vấn giải pháp phần mềm, thiết kế website và ứng dụng di động. Chúng tôi phản hồi nhanh và hỗ trợ tận tâm.",
+    "Liên hệ Smart Code Digital Solutions để được tư vấn và báo giá dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động. Hỗ trợ 24/7, phản hồi nhanh chóng.",
   keywords:
-    "liên hệ, tư vấn phần mềm, thiết kế website, ứng dụng di động, Smart Code Digital Solutions",
+    "liên hệ smart code, tư vấn phát triển phần mềm, báo giá website, báo giá app mobile, hỗ trợ khách hàng, tư vấn chuyển đổi số, địa chỉ công ty phần mềm",
   alternates: {
     canonical: "/contact",
-    languages: {
-      vi: "/contact",
-    },
-  },
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   openGraph: {
-    title: "Liên Hệ - Smart Code Digital Solutions",
+    title:
+      "Liên Hệ - Smart Code Digital Solutions | Tư Vấn & Báo Giá Dịch Vụ Phát Triển Phần Mềm",
     description:
-      "Liên hệ để được tư vấn giải pháp phần mềm, website và ứng dụng di động.",
-    url: "/contact",
+      "Liên hệ Smart Code Digital Solutions để được tư vấn và báo giá dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động. Hỗ trợ 24/7.",
+    url: "https://smartcodesolutions.vn/contact",
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
       {
         url: "/images/logo-name.png",
         width: 1024,
         height: 1024,
-        alt: "Smart Code Digital Solutions",
+        alt: "Smart Code Digital Solutions - Liên Hệ",
       },
     ],
     locale: "vi_VN",
@@ -45,9 +31,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Liên Hệ - Smart Code Digital Solutions",
+    title:
+      "Liên Hệ - Smart Code Digital Solutions | Tư Vấn & Báo Giá Dịch Vụ Phát Triển Phần Mềm",
     description:
-      "Liên hệ để được tư vấn giải pháp phần mềm, website và ứng dụng di động.",
+      "Liên hệ Smart Code Digital Solutions để được tư vấn và báo giá dịch vụ phát triển phần mềm, thiết kế website, ứng dụng di động. Hỗ trợ 24/7.",
     images: ["/images/logo-name.png"],
   },
 };
@@ -57,5 +44,10 @@ export default function ContactLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <StructuredData type="contactPoint" />
+      {children}
+    </>
+  );
 }

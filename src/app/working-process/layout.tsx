@@ -1,43 +1,28 @@
-export const metadata = {
-  title: "Quy Trình Làm Việc - Smart Code Digital Solutions",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Quy Trình Làm Việc - Smart Code Digital Solutions | Phương Pháp Phát Triển Phần Mềm Chuyên Nghiệp",
   description:
-    "Khám phá quy trình làm việc của Smart Code Digital Solutions: Phân tích, thiết kế UI/UX, demo, lập trình, bàn giao và bảo trì để đảm bảo chất lượng dự án.",
+    "Khám phá quy trình làm việc chuyên nghiệp của Smart Code Digital Solutions: từ phân tích yêu cầu, thiết kế UI/UX, lập trình đến bàn giao và bảo trì. Đảm bảo chất lượng và tiến độ dự án.",
   keywords:
-    "quy trình làm việc, phát triển phần mềm, thiết kế UI/UX, demo thiết kế, lập trình, bàn giao, bảo trì, Smart Code Digital Solutions",
+    "quy trình làm việc, phương pháp phát triển phần mềm, quy trình thiết kế UI/UX, lập trình agile, bàn giao dự án, bảo trì phần mềm, quản lý dự án CNTT",
   alternates: {
     canonical: "/working-process",
-    languages: {
-      vi: "/working-process",
-    },
-  },
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   openGraph: {
-    title: "Quy Trình Làm Việc - Smart Code Digital Solutions",
+    title:
+      "Quy Trình Làm Việc - Smart Code Digital Solutions | Phương Pháp Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
-      "Quy trình làm việc bài bản: Phân tích, thiết kế UI/UX, demo, lập trình, bàn giao và bảo trì.",
-    url: "/working-process",
+      "Khám phá quy trình làm việc chuyên nghiệp của Smart Code Digital Solutions: từ phân tích yêu cầu, thiết kế UI/UX, lập trình đến bàn giao và bảo trì.",
+    url: "https://smartcodesolutions.vn/working-process",
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
       {
         url: "/images/logo-name.png",
         width: 1024,
         height: 1024,
-        alt: "Smart Code Digital Solutions",
+        alt: "Smart Code Digital Solutions - Quy Trình Làm Việc",
       },
     ],
     locale: "vi_VN",
@@ -45,9 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quy Trình Làm Việc - Smart Code Digital Solutions",
+    title:
+      "Quy Trình Làm Việc - Smart Code Digital Solutions | Phương Pháp Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
-      "Quy trình làm việc bài bản: Phân tích, thiết kế UI/UX, demo, lập trình, bàn giao và bảo trì.",
+      "Khám phá quy trình làm việc chuyên nghiệp của Smart Code Digital Solutions: từ phân tích yêu cầu, thiết kế UI/UX, lập trình đến bàn giao và bảo trì.",
     images: ["/images/logo-name.png"],
   },
 };
@@ -57,5 +43,5 @@ export default function WorkingProcessLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return children;
 }

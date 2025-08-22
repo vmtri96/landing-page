@@ -1,43 +1,28 @@
-export const metadata = {
-  title: "Lộ Trình Khách Hàng - Smart Code Digital Solutions",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Lộ Trình Hợp Tác - Smart Code Digital Solutions | Quy Trình Làm Việc Với Khách Hàng",
   description:
-    "Tìm hiểu cách Smart Code Digital Solutions đồng hành cùng khách hàng: khám phá nhu cầu, thiết kế giải pháp, triển khai và hỗ trợ.",
+    "Khám phá lộ trình hợp tác 3 giai đoạn của Smart Code Digital Solutions: khám phá nhu cầu, thiết kế giải pháp, triển khai & hỗ trợ. Đảm bảo thành công dự án và sự hài lòng của khách hàng.",
   keywords:
-    "lộ trình khách hàng, quy trình hợp tác, tư vấn, triển khai, Smart Code Digital Solutions",
+    "lộ trình hợp tác, quy trình làm việc với khách hàng, khám phá nhu cầu, thiết kế giải pháp, triển khai dự án, hỗ trợ khách hàng, quản lý dự án CNTT",
   alternates: {
     canonical: "/client-pathway",
-    languages: {
-      vi: "/client-pathway",
-    },
-  },
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   openGraph: {
-    title: "Lộ Trình Khách Hàng - Smart Code Digital Solutions",
+    title:
+      "Lộ Trình Hợp Tác - Smart Code Digital Solutions | Quy Trình Làm Việc Với Khách Hàng",
     description:
-      "Quy trình hợp tác với khách hàng: khám phá nhu cầu, thiết kế giải pháp, triển khai & hỗ trợ.",
-    url: "/client-pathway",
+      "Khám phá lộ trình hợp tác 3 giai đoạn của Smart Code Digital Solutions: khám phá nhu cầu, thiết kế giải pháp, triển khai & hỗ trợ.",
+    url: "https://smartcodesolutions.vn/client-pathway",
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
       {
         url: "/images/logo-name.png",
         width: 1024,
         height: 1024,
-        alt: "Smart Code Digital Solutions",
+        alt: "Smart Code Digital Solutions - Lộ Trình Hợp Tác",
       },
     ],
     locale: "vi_VN",
@@ -45,9 +30,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lộ Trình Khách Hàng - Smart Code Digital Solutions",
+    title:
+      "Lộ Trình Hợp Tác - Smart Code Digital Solutions | Quy Trình Làm Việc Với Khách Hàng",
     description:
-      "Quy trình hợp tác với khách hàng: khám phá nhu cầu, thiết kế giải pháp, triển khai & hỗ trợ.",
+      "Khám phá lộ trình hợp tác 3 giai đoạn của Smart Code Digital Solutions: khám phá nhu cầu, thiết kế giải pháp, triển khai & hỗ trợ.",
     images: ["/images/logo-name.png"],
   },
 };
@@ -57,5 +43,5 @@ export default function ClientPathwayLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return children;
 }

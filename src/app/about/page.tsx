@@ -1,10 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from "@/components/RelatedContent";
+import SocialSharing from "@/components/SocialSharing";
+import CallToAction from "@/components/CallToAction";
 
 export default function AboutPage() {
   return (
     <div>
       <Header />
+      <Breadcrumb />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
@@ -140,6 +145,50 @@ export default function AboutPage() {
           </div>
         </div>
       </main>
+
+      <RelatedContent
+        currentPage="/about"
+        relatedPages={[
+          {
+            href: "/services",
+            title: "Dịch Vụ Của Chúng Tôi",
+            description:
+              "Khám phá đầy đủ các dịch vụ phát triển phần mềm, website và ứng dụng di động",
+          },
+          {
+            href: "/working-process",
+            title: "Quy Trình Làm Việc",
+            description:
+              "Tìm hiểu quy trình phát triển chuyên nghiệp và phương pháp làm việc của chúng tôi",
+          },
+          {
+            href: "/contact",
+            title: "Liên Hệ Tư Vấn",
+            description:
+              "Liên hệ ngay để được tư vấn và báo giá dịch vụ phù hợp với nhu cầu của bạn",
+          },
+        ]}
+      />
+
+      <CallToAction
+        title="Tin tưởng chúng tôi với dự án của bạn?"
+        description="Hãy để đội ngũ chuyên nghiệp của chúng tôi giúp bạn hiện thực hóa ý tưởng"
+        primaryButton={{
+          text: "Liên Hệ Tư Vấn",
+          href: "/contact",
+          variant: "primary",
+        }}
+        secondaryButton={{
+          text: "Xem Dịch Vụ",
+          href: "/services",
+          variant: "secondary",
+        }}
+      />
+
+      <SocialSharing
+        title="Về Smart Code Digital Solutions - Công Ty Phát Triển Phần Mềm Hàng Đầu"
+        url="https://smartcodesolutions.vn/about"
+      />
 
       <Footer />
     </div>

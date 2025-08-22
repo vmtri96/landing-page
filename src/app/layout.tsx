@@ -1,6 +1,12 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import StructuredData from "@/components/StructuredData";
+import PerformanceOptimizer from "@/components/PerformanceOptimizer";
+import EnhancedAnalytics from "@/components/EnhancedAnalytics";
+import WebVitalsMonitor from "@/components/WebVitalsMonitor";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import { PathProvider } from "@/contexts/PathContext";
 
 const font = Montserrat({
@@ -89,7 +95,15 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body className={`${font.className}`}>
-        <PathProvider>{children}</PathProvider>
+        <ErrorBoundary>
+          <GoogleAnalytics />
+          <PerformanceOptimizer />
+          <EnhancedAnalytics />
+          <WebVitalsMonitor />
+          <StructuredData type="organization" />
+          <StructuredData type="webSite" />
+          <PathProvider>{children}</PathProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );

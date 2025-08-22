@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ClientPathway from "@/components/ClientPathway";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function ClientPathwayPage() {
   return (
     <div>
       <Header />
+      <Breadcrumb />
       <main>
         <ClientPathway />
 
