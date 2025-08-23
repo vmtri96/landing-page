@@ -1,22 +1,25 @@
 const SchemaMarkup = () => {
-  const schema = {
+  const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Smart Code Digital Solutions Co., Ltd.",
     url: "https://smartcodesolutions.vn",
-    logo: "https://smartcodesolutions.vn/images/logo-name-blue.png",
+    logo: "https://smartcodesolutions.vn/images/logo-name.png",
     description:
-      "Công ty phát triển phần mềm, thiết kế website và ứng dụng di động chuyên nghiệp",
+      "Công ty phát triển phần mềm, thiết kế website và ứng dụng di động chuyên nghiệp tại Cần Thơ",
     address: {
       "@type": "PostalAddress",
       addressCountry: "VN",
-      addressLocality:
-        "Cạnh 29E1, Đường F5, Khu Dân Cư 3A, Phường An Bình, Thành phố Cần Thơ",
+      addressLocality: "Cần Thơ",
+      addressRegion: "Cần Thơ",
+      streetAddress: "Cạnh 29E1, Đường F5, Khu Dân Cư 3A, Phường An Bình",
     },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
       availableLanguage: "Vietnamese",
+      telephone: "+84-0967-476-659",
+      email: "smartcodesolutions.vn@gmail.com",
     },
     sameAs: [
       "https://facebook.com/smartcodesolutions",
@@ -68,11 +71,55 @@ const SchemaMarkup = () => {
     },
   };
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Smart Code Digital Solutions Co., Ltd.",
+    description:
+      "Công ty phát triển phần mềm, thiết kế website và ứng dụng di động chuyên nghiệp tại Cần Thơ",
+    url: "https://smartcodesolutions.vn",
+    telephone: "+84-0967-476-659",
+    email: "smartcodesolutions.vn@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "VN",
+      addressLocality: "Cần Thơ",
+      addressRegion: "Cần Thơ",
+      streetAddress: "Cạnh 29E1, Đường F5, Khu Dân Cư 3A, Phường An Bình",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "10.0452",
+      longitude: "105.7469",
+    },
+    openingHours: "Mo-Fr 08:30-17:00",
+    priceRange: "$$",
+    areaServed: {
+      "@type": "Country",
+      name: "Vietnam",
+    },
+    serviceType: [
+      "Phát triển phần mềm",
+      "Thiết kế website",
+      "Ứng dụng di động",
+      "Chuyển đổi số",
+      "Bảo trì phần mềm",
+    ],
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+    </>
   );
 };
 

@@ -14,7 +14,8 @@ export default function AboutPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Về Smart Code Digital Solutions
+            Về Smart Code Digital Solutions - Công Ty Phát Triển Phần Mềm Hàng
+            Đầu Cần Thơ
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             Chúng tôi là đơn vị tiên phong trong lĩnh vực phát triển phần mềm và
@@ -41,9 +42,9 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Thế Mạnh Của Chúng Tôi
-            </h3>
+            </h2>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <span className="text-green-500 mr-3">✓</span>
