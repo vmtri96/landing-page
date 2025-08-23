@@ -14,9 +14,9 @@ export default function WorkingProcessPage() {
         <section id="working-process-details" className="bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-12">
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Quy Trình Phát Triển Phần Mềm Chuyên Nghiệp
-              </h1>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Chi tiết từng giai đoạn
+              </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Quy trình giúp đội ngũ và khách hàng đồng bộ mục tiêu, giảm rủi
                 ro, kiểm soát tiến độ và tối ưu chi phí trong suốt vòng đời dự
@@ -26,9 +26,9 @@ export default function WorkingProcessPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Phân tích
-                </h2>
+                </h3>
                 <p className="text-gray-600 mb-3">
                   Thu thập yêu cầu, phân tích nghiệp vụ, xác định phạm vi và mục
                   tiêu.
@@ -41,9 +41,9 @@ export default function WorkingProcessPage() {
               </div>
 
               <div className="p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Thiết kế UI/UX
-                </h2>
+                </h3>
                 <p className="text-gray-600 mb-3">
                   Lên wireframe, flow, style guide và prototype theo trải nghiệm
                   người dùng.
@@ -56,9 +56,9 @@ export default function WorkingProcessPage() {
               </div>
 
               <div className="p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Demo thiết kế
-                </h2>
+                </h3>
                 <p className="text-gray-600 mb-3">
                   Trình bày prototype, thu thập phản hồi, tinh chỉnh trước khi
                   phát triển.
@@ -71,9 +71,9 @@ export default function WorkingProcessPage() {
               </div>
 
               <div className="p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Lập trình
-                </h2>
+                </h3>
                 <p className="text-gray-600 mb-3">
                   Phát triển tính năng theo sprint, code review, kiểm thử tự
                   động.
@@ -86,9 +86,9 @@ export default function WorkingProcessPage() {
               </div>
 
               <div className="p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Bàn giao
-                </h2>
+                </h3>
                 <p className="text-gray-600 mb-3">
                   Triển khai môi trường production, hướng dẫn sử dụng và tài
                   liệu kỹ thuật.
@@ -101,9 +101,9 @@ export default function WorkingProcessPage() {
               </div>
 
               <div className="p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Bảo trì
-                </h2>
+                </h3>
                 <p className="text-gray-600 mb-3">
                   Theo dõi vận hành, tối ưu hiệu năng, xử lý sự cố và phát triển
                   tiếp.
@@ -117,9 +117,9 @@ export default function WorkingProcessPage() {
             </div>
 
             <div className="mt-12 bg-blue-50 rounded-lg p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 Cách chúng tôi đảm bảo thành công dự án
-              </h2>
+              </h3>
               <p className="text-gray-700">
                 Chúng tôi áp dụng quy trình tinh gọn, đo lường minh bạch và giao
                 tiếp thường xuyên với khách hàng. Mỗi giai đoạn đều có tiêu chí

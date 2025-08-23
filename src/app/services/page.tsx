@@ -51,27 +51,9 @@ export default function ServicesPage() {
     },
   ];
 
-  // FAQ Schema for SEO
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqData.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
     <div>
       <StructuredData type="faq" data={{ faqs: faqData }} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <Header />
       <Breadcrumb />
       <main>
@@ -79,15 +61,15 @@ export default function ServicesPage() {
 
         <section id="services-comparison" className="bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-              Bảng So Sánh Dịch Vụ Phát Triển Phần Mềm & Website
-            </h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+              Bảng so sánh theo dịch vụ đang chọn
+            </h2>
 
             {activeService && (
               <div className="mb-12">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
                   {activeService.name}
-                </h2>
+                </h3>
 
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200 bg-white rounded-lg overflow-hidden">
@@ -155,10 +137,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <FAQ
-          title="Câu Hỏi Thường Gặp Về Dịch Vụ Phát Triển Phần Mềm & Website"
-          faqs={faqData}
-        />
+        <FAQ title="Câu Hỏi Thường Gặp Về Dịch Vụ" faqs={faqData} />
       </main>
       <Footer />
     </div>

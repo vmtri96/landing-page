@@ -4,9 +4,9 @@ export const metadata: Metadata = {
   title:
     "Quy Trình Làm Việc - Smart Code Digital Solutions | Phương Pháp Phát Triển Phần Mềm Chuyên Nghiệp",
   description:
-    "Khám phá quy trình phát triển phần mềm chuyên nghiệp của Smart Code Digital Solutions. Từ phân tích yêu cầu đến bàn giao và bảo trì, đảm bảo dự án thành công 100%.",
+    "Khám phá quy trình làm việc chuyên nghiệp của Smart Code Digital Solutions: từ phân tích yêu cầu, thiết kế UI/UX, lập trình đến bàn giao và bảo trì. Đảm bảo chất lượng và tiến độ dự án.",
   keywords:
-    "quy trình phát triển phần mềm Cần Thơ, phương pháp làm việc IT Cần Thơ, quy trình thiết kế website Cần Thơ, phương pháp phát triển ứng dụng Cần Thơ, quy trình dự án phần mềm Cần Thơ",
+    "quy trình làm việc, phương pháp phát triển phần mềm, quy trình thiết kế UI/UX, lập trình agile, bàn giao dự án, bảo trì phần mềm, quản lý dự án CNTT",
   alternates: {
     canonical: "/working-process",
   },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title:
       "Quy Trình Làm Việc - Smart Code Digital Solutions | Phương Pháp Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
-      "Khám phá quy trình phát triển phần mềm chuyên nghiệp của Smart Code Digital Solutions. Từ phân tích yêu cầu đến bàn giao và bảo trì, đảm bảo dự án thành công 100%.",
+      "Khám phá quy trình làm việc chuyên nghiệp của Smart Code Digital Solutions: từ phân tích yêu cầu, thiết kế UI/UX, lập trình đến bàn giao và bảo trì.",
     url: "https://smartcodesolutions.vn/working-process",
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "/images/logo-name.png",
         width: 1024,
         height: 1024,
-        alt: "Quy Trình Làm Việc Smart Code Digital Solutions - Phương Pháp Phát Triển Chuyên Nghiệp",
+        alt: "Smart Code Digital Solutions - Quy Trình Làm Việc",
       },
     ],
     locale: "vi_VN",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title:
       "Quy Trình Làm Việc - Smart Code Digital Solutions | Phương Pháp Phát Triển Phần Mềm Chuyên Nghiệp",
     description:
-      "Khám phá quy trình phát triển phần mềm chuyên nghiệp của Smart Code Digital Solutions.",
+      "Khám phá quy trình làm việc chuyên nghiệp của Smart Code Digital Solutions: từ phân tích yêu cầu, thiết kế UI/UX, lập trình đến bàn giao và bảo trì.",
     images: ["/images/logo-name.png"],
   },
 };

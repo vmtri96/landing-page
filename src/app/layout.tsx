@@ -16,11 +16,11 @@ const font = Montserrat({
 
 export const metadata = {
   title:
-    "Smart Code Digital Solutions Cần Thơ - Công Ty Phát Triển Phần Mềm, Thiết Kế Website & Ứng Dụng Di Động Hàng Đầu Tại Cần Thơ",
+    "Smart Code Digital Solutions Cần Thơ - Công Ty Phát Triển Phần Mềm, Thiết Kế Website & Ứng Dụng Di Động Hàng Đầu",
   description:
-    "Smart Code Digital Solutions Cần Thơ - Công ty phát triển phần mềm, thiết kế website, ứng dụng di động và chuyển đổi số chuyên nghiệp tại Cần Thơ. Giải pháp CNTT tối ưu cho doanh nghiệp với giá cả hợp lý, chất lượng cao. Hơn 5 năm kinh nghiệm, 100+ dự án thành công.",
+    "Smart Code Digital Solutions Cần Thơ - Công ty phát triển phần mềm, thiết kế website, ứng dụng di động và chuyển đổi số chuyên nghiệp tại Cần Thơ. Giải pháp CNTT tối ưu cho doanh nghiệp với giá cả hợp lý, chất lượng cao.",
   keywords:
-    "phát triển phần mềm Cần Thơ, thiết kế website Cần Thơ, ứng dụng di động Cần Thơ, chuyển đổi số Cần Thơ, phát triển web Cần Thơ, app mobile Cần Thơ, giải pháp CNTT Cần Thơ, công ty phần mềm Cần Thơ, dịch vụ IT Cần Thơ, lập trình viên Cần Thơ, thiết kế giao diện Cần Thơ, SEO website Cần Thơ, bảo trì phần mềm Cần Thơ, công ty công nghệ Cần Thơ, phần mềm quản lý Cần Thơ",
+    "phát triển phần mềm Cần Thơ, thiết kế website Cần Thơ, ứng dụng di động Cần Thơ, chuyển đổi số Cần Thơ, phát triển web Cần Thơ, app mobile Cần Thơ, giải pháp CNTT Cần Thơ, công ty phần mềm Cần Thơ, dịch vụ IT Cần Thơ, lập trình viên Cần Thơ, thiết kế giao diện Cần Thơ, SEO website Cần Thơ, bảo trì phần mềm Cần Thơ",
   authors: [{ name: "Smart Code Digital Solutions Co., Ltd." }],
   creator: "Smart Code Digital Solutions Co., Ltd.",
   publisher: "Smart Code Digital Solutions Co., Ltd.",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Smart Code Digital Solutions Cần Thơ - Công Ty Phát Triển Phần Mềm & Website Hàng Đầu Tại Cần Thơ",
+      "Smart Code Digital Solutions Cần Thơ - Công Ty Phát Triển Phần Mềm & Website Hàng Đầu",
     description:
-      "Smart Code Digital Solutions Cần Thơ - Chuyển đổi doanh nghiệp với giải pháp CNTT tiên tiến. Phát triển phần mềm, thiết kế website, ứng dụng di động, bảo trì phần mềm tại Cần Thơ. Hơn 5 năm kinh nghiệm, 100+ dự án thành công.",
+      "Smart Code Digital Solutions Cần Thơ - Chuyển đổi doanh nghiệp với giải pháp CNTT tiên tiến. Phát triển phần mềm, thiết kế website, ứng dụng di động, bảo trì phần mềm tại Cần Thơ.",
     url: "https://smartcodesolutions.vn",
     siteName: "Smart Code Digital Solutions Co., Ltd.",
     images: [
@@ -45,7 +45,7 @@ export const metadata = {
         url: "/images/logo-name.png",
         width: 1024,
         height: 1024,
-        alt: "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp Tại Cần Thơ",
+        alt: "Smart Code Digital Solutions - Dịch Vụ Phát Triển Phần Mềm Chuyên Nghiệp",
       },
     ],
     locale: "vi_VN",
@@ -54,7 +54,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Smart Code Digital Solutions Cần Thơ - Công Ty Phát Triển Phần Mềm & Website Hàng Đầu Tại Cần Thơ",
+      "Smart Code Digital Solutions Cần Thơ - Công Ty Phát Triển Phần Mềm & Website Hàng Đầu",
     description:
       "Smart Code Digital Solutions Cần Thơ - Chuyển đổi doanh nghiệp với giải pháp CNTT tiên tiến. Phát triển phần mềm, thiết kế website, ứng dụng di động tại Cần Thơ.",
     images: ["/images/logo-name.png"],
