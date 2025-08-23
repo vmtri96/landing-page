@@ -1,3 +1,5 @@
+import React from "react";
+
 const SchemaMarkup = () => {
   const schema = {
     "@context": "https://schema.org",
@@ -6,12 +8,12 @@ const SchemaMarkup = () => {
     url: "https://smartcodesolutions.vn",
     logo: "https://smartcodesolutions.vn/images/logo-name-blue.png",
     description:
-      "Công ty phát triển phần mềm, thiết kế website và ứng dụng di động chuyên nghiệp",
+      "Công ty phát triển phần mềm, thiết kế website và ứng dụng di động chuyên nghiệp tại Cần Thơ",
     address: {
       "@type": "PostalAddress",
       addressCountry: "VN",
-      addressLocality:
-        "Cạnh 29E1, Đường F5, Khu Dân Cư 3A, Phường An Bình, Thành phố Cần Thơ",
+      addressLocality: "Cần Thơ",
+      addressRegion: "Cần Thơ",
     },
     contactPoint: {
       "@type": "ContactPoint",
@@ -35,7 +37,8 @@ const SchemaMarkup = () => {
           itemOffered: {
             "@type": "Service",
             name: "Thiết kế website",
-            description: "Dịch vụ thiết kế website chuyên nghiệp, tối ưu SEO",
+            description:
+              "Dịch vụ thiết kế website chuyên nghiệp, tối ưu SEO tại Cần Thơ",
           },
         },
         {
@@ -44,7 +47,7 @@ const SchemaMarkup = () => {
             "@type": "Service",
             name: "Phát triển ứng dụng di động",
             description:
-              "Thiết kế và phát triển ứng dụng mobile cho iOS và Android",
+              "Thiết kế và phát triển ứng dụng mobile cho iOS và Android tại Cần Thơ",
           },
         },
         {
@@ -53,7 +56,7 @@ const SchemaMarkup = () => {
             "@type": "Service",
             name: "Phát triển phần mềm",
             description:
-              "Phát triển phần mềm tùy chỉnh theo yêu cầu doanh nghiệp",
+              "Phát triển phần mềm tùy chỉnh theo yêu cầu doanh nghiệp tại Cần Thơ",
           },
         },
         {
@@ -61,7 +64,8 @@ const SchemaMarkup = () => {
           itemOffered: {
             "@type": "Service",
             name: "Bảo trì và nâng cấp phần mềm",
-            description: "Dịch vụ bảo trì, nâng cấp và tối ưu hóa phần mềm",
+            description:
+              "Dịch vụ bảo trì, nâng cấp và tối ưu hóa phần mềm tại Cần Thơ",
           },
         },
       ],

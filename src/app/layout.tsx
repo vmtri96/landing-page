@@ -83,7 +83,6 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <head>
-        <SchemaMarkup />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1C426B" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -102,6 +101,7 @@ export default function RootLayout({
           <WebVitalsMonitor />
           <StructuredData type="organization" />
           <StructuredData type="webSite" />
+          <SchemaMarkup />
           <PathProvider>{children}</PathProvider>
         </ErrorBoundary>
       </body>
